@@ -208,6 +208,5 @@ The map will:
 * Used web scraping to enrich missing data
 * Used Leaflet/OpenLayers for lightweight mapping
 * Stored cleaned data only (no raw HTML retained)
-\
-\
+
 \
