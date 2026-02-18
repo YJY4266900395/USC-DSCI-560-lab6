@@ -1,0 +1,11 @@
+CREATE TABLE wells (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    api_number VARCHAR(50),
+    well_name VARCHAR(255),
+    operator VARCHAR(255),
+    latitude DOUBLE,
+    longitude DOUBLE,
+    address VARCHAR(255),
+    county VARCHAR(255),
+    state VARCHAR(100)
+);
