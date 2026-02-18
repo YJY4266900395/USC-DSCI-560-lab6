@@ -1,0 +1,11 @@
+A Gyrodata Directional Survey
+Oasis Petroleum
+Lease: Kline Federal Well: 5300 41-18 10B ST2, 6" Hole
+Location: Nabors #486, McKenzie County, North Dakota
+Job Number: RD0814M177ST2
+
+MEASURED INCL AZIMUTH DOGLEG VERTICAL CLOSURE HORIZONTAL
+DEPTH SEVERITY DEPTH DIST. AZIMUTH COORDINATES
+feet deg. deg. deg/ feet feet deg. feet
+
+100 ft.

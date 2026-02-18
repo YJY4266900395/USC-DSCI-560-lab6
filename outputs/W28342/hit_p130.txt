@@ -1,0 +1,46 @@
+Oasis Petroleum
+
+Well Summary
+
+Chalmers 5301 44-24 2TX
+Sec. 24 T153N R101W
+
+McKenzie County, North Dakota
+
+PRODUCTION LINER
+Size Interval Weight | Grade | Coupling LL.D. Drift Torque
+4-1/2" 10,171'— 21,051" 13.5 P-110 BIC 3.92" 3.795" 4,500
+Interval Length Description Collapse Burst Tension Condition
+(psi) a (psi) b (1000 Ibs) ¢
+10,171'— 21,028'| 10,857’ | 4-1/2”, 13.5 lb, P-110, BTC, 8rd | _10670/ 2.00 12410 / 1.28 443 /1.96 New
+
+API Rating & Safety Factor
+
+a) Based on full casing evacuation with 9.5 ppg fluid on backside @ 10769' TVD.
+
+b) Burst pressure based on 9000 psi treating pressure with 10.2 ppg internal fluid gradient and 9 ppg
+
+external fluid gradient @ 10769' TVD.
+c) Based on string weight in 9.5 ppg fluid (Buoyed weight: 125k Ibs.) plus 100k Ibs overpull.
+
+Oasis Petroleum does not use Diesel Fuel, as defined by the US EPA in the list below, in our
+
+hydraulic fracture operation:
+
+68334-30-5 (Primary Name
+68476-34-6 (Primary Name
+68476-30-2 (Primary Name
+68476-31-3 (Primary Name
+8008-20-6 (Primary Name:
+
+iS.
+
+: Fuels, diesel)
+
+: Fuels, diesel, No. 2)
+
+: Fuel oil No. 2)
+: Fuel oil, No. 4)
+
+Kerosene)
+

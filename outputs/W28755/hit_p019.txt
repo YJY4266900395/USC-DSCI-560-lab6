@@ -1,0 +1,72 @@
+WELL DATA SUMMARY
+
+OPERATOR:
+
+ADDRESS:
+
+WELL NAME:
+
+API #:
+
+WELL FILE #:
+
+SURFACE LOCATION:
+
+FIELD/ OBJECTIVE:
+
+COUNTY, STATE
+
+ELEVATION:
+
+SPUD/ RE-ENTRY DATE:
+
+BOTTOM HOLE LOCATION:
+
+CLOSURE COORDINATES:
+
+TOTAL DEPTH / DATE:
+
+TOTAL DRILLING DAYS:
+
+CONTRACTOR:
+
+Oasis Petroleum North America, LLC
+
+1001 Fannin Suite 1500
+Houston, TX 77002
+
+Kline Federal 5300 31-18 7T
+
+33-053-06056-00-00
+
+28755
+
+2,490' FSL & 238' FWL
+Lot 3 Section 18, T153N, R100W
+
+Baker Field / First Bench Three Forks
+
+McKenzie County, North Dakota
+
+Williston
+
+First Bench Three Forks
+
+GL: 2,008"
+KB: 2,033'
+
+March 27, 2014
+
+540.92' South & 9,896.97" East of surface location or approx.
+1,949.08' FSL & 354.19’ FEL, NE SE Sec. 17, T153N, R100W
+
+Closure Azimuth: 93.13°
+Closure Distance: 9,911.74"
+
+20,561' on April 22, 2015
+
+90% within target interval
+
+14 days
+
+Nabors B22

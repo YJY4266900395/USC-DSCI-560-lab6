@@ -1,0 +1,55 @@
+Oasis Petroleum
+Well Summary
+Wade Federal 5300 4130 9B
+Sec. 30 T153N R100W
+McKenzie County, North Dakota
+
+INTERMEDIATE CASING AND CEMENT DESIGN
+
+Make-up Torque (ft-lbs)
+
+Size Interval Weight| Grade _| Coupling 1.D. Drift Minimum Optimum Max
+7” 0' - 6896' 29 P-110 LTC 6.184” 6.059” 5,980 7,970 8,770
+7” 6896' - 10229' 32 HCP-110 LTC 6.094” | 6.000"** 6,730 8,970 9,870
+7” 10229! - 11529' 29 P-110 LTC 6.184” 6.059” 5,980 7,970 8,770
+Special Drift
+
+Interval Description Collapse Burst Tension
+(psi) a (psi) b (1000 Ibs) c
+0' - 6896' 7”, 29#, HCP-110, LTC, 8rd 8530 / 2.37* 11220 / 1.18 797 12.14
+6896' - 10229' 7”, 32#, HCP-110, LTC, 8rd 11820 / 2.22* 12460 / 1.29
+6896! - 10229'_|_7”, 32#, HCP-110, LTC, 8rd 11820 / 1.07** 12460 / 1.29
+10229'- 11529' | 7”, 32#, HCP-110, LTC, 8rd 8530 / 1.53* 11220/1.16
+
+Cc.
+
+API Rating & Safety Factor
+*Assume full casing evacuation with 10 ppg fluid on backside. **Assume full casing
+evacuation with 1.2 psi/ft equivalent fluid gradient across salt intervals.
+Burst pressure based on 9,000 psig max press for stimulation plus 10.2 ppg fluid in
+casing and 9.0 ppg fluid on backside—to 10,706’ TVD.
+Based on string weight in 10 ppg fluid, (271k Ibs buoyed weight) plus 100k Ibs overpull.
+
+Cement volumes are estimates based on 7" casing set in an 8-3/4" hole with 30% excess.
+
+Pre-flush (Spacer):
+
+Lead Slurry:
+
+Tail Slurry:
+
+Displacement:
+
+50 bbls Saltwater
+40 bbls Weighted MudPush Express
+
+189 sks (87 bbls) 2.59 yield conventional system with 61 Ib/sk cement, 23 Ib/sk D035
+Extender, .250 Ib/sk D130 Lost Circulation Control Agent, 10% NaCl, .15% D208 Viscosifier,
+-20% D046 Anti Foamer, .8% D112 Fluid Loss Agent, and 6% D154 Extender.
+
+592 sks (184 bbls) 1.55 yield conventional system with 94 Ib/sk cement, .250 lb/sk D130 Lost
+Circulation Control Agent, 3% KCL, 35% Silica, .2% D167 Fluid Loss Agent, .5% D065
+Dispersant, .2%D198 Retarder, .2% D046 Anti Foamer, and .25% D153 Anti-Settling Agent.
+
+401 bbl brine
+

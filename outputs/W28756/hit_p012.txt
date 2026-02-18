@@ -1,0 +1,78 @@
+ENSECO Energy Services
+
+Oasis Petroleum LLC
+McKenzie County, North Dakota
+Lot 3 Sec.18 Twp.153N Rge.100W
+
+Survey Report
+
+Local Co-ordinate Reference:
+Ground Level Elevation:
+Wellhead Elevation:
+
+ed
+
+ENSECO
+
+Directional Drilling
+
+Well Kline Federal 5300 31-18 6B
+2,026.00usft
+WELL @ 2026.00usft (Original Well Elev)
+
+Well: Kline Federal 5300 31-18 6B North Reference: True
+Wellbore: Job # $15072-02 Survey Calculation Method: Minimum Curvature
+Design: Final Surveys Vertical Section
+Database: EDMs000
+Project McKenzie County, North Dakota
+Map System: US State Plane 1983 System Datum: Mean Sea Level
+Geo Datum: North American Datum 1983
+Map Zone: North Dakota Northern Zone Using geodetic scale factor
+Site Lot 3 Sec.18 Twp.153N Rge.100W
+
+Site Position:
+From:
+
+Position Uncertainty:
+
+Northing:
+Lat/Long Easting:
+
+0.00 usft
+
+Slot Radius:
+
+407,221.74 usft
+
+1,210,091.04 usft
+13-3/16"
+
+Latitude:
+Longitude:
+Grid Convergence:
+
+48° 4' 28.160 N
+103° 36' 11.380 W
+-2.309°
+
+Well Kline Federal 5300 31-1868 | _API#t: 33-053-06057
+Well Position +NI-S -65.87 usft_ _ Northing: 407,155.93 usft Latitude: 48° 4' 27.510 N
++EI-W 0.00 ust Easting: 1,210,088.38 usft Longitude: 103° 36" 11.380 W
+Position Uncertainty 0.00 usft Wellhead Elevation: usft Ground Level: 2,026.00usft
+Wellbore Job # $15072-02
+Magnetics Model Name ‘Sample Date Declination Dip Angle Field Strength
+(9) e (nT)
+IGRF2015 2127/2015 8.304 72.942 56,271
+Design: Final Surveys Vertical Section
+Survey Error Model: Standard ISCWSA MWD Tool
+Audit Notes:
+Version: 1.0 Phase: ACTUAL Tie On Depth: 0.00
+Vertical Section: Depth From (TVD) +NI-S +2/-W Direction
+(usft) (usft) (usft) 0)
+0.00 0.00 0.00 13.34
+
+2/27/2015 11:14:39AM
+
+Page 2
+
+COMPASS 5000.1 Build 56

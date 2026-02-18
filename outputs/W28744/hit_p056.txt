@@ -1,0 +1,23 @@
+Oasis Petroleum
+
+Well Summary
+
+Wade Federal 5300 4130 9B
+Sec. 30 T153N R100W
+McKenzie County, North Dakota
+
+PRODUCTION LIN
+Make-up Torque (ft-lbs)
+Size Interval Weight Grade Coupling 1.D. Drift Minimum Optimum Max
+4-1/2” _| 10179' - 20729' 11.6 P-110 BIC 4.000" 3.875" 2,270 3,020 3,780
+Interval Length Description Collapse Burst Tension Condition
+(psi) a (psi) b (1000 Ibs) ¢
+10179' - 20729' 10,550’ 4-1/2", 11.6 Ib, P-110, BTC, 8rd 7,560/1.53 10,690/1.11 385/1.83 New
+
+API Rating & Safety Factor
+
+Based on full casing evacuation with 9.5 ppg fluid on backside @ 9,950’ TVD.
+Burst pressure based on 9,000 psi treating pressure with 10.2 ppg internal fluid gradient and 9.0
+ppg external fluid gradient @ 10,763’ TVD.
+Based on string weight in 9.5 ppg fluid (Buoyed weight: 105k Ibs.) plus 100k Ibs overpull.
+

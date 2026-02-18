@@ -1,0 +1,34 @@
+Oasis Petroleum
+Well Summary
+Chalmers 5300 21-19 5T
+Sec. 19 T153N R100W
+McKenzie County, North Dakota
+
+INTERMEDIATE CASING AND CEMENT DESIGN
+
+Make-up Torque (ft-Ibs)
+Size Coupling .D. Drift Minimum Optimum Max
+9-5/8" 0 - 6000" HeL-80 | LTC 8.835"_| 8.75"** 5,450 7,270 9,090,
+
+Interval Description Collapse Burst Tension |
+
+API Rating & actor
+
+d) Collapse pressure based on 11.5ppg fluid on backside and 9ppq fluid inside of casing.
+
+e) Burst pressure calculated from a gas kick coming from the production zone (Bakken Pool) at
+9,000psi and a subsequent breakdown at the 9-5/8” shoe, based on a 13.5#/ft fracture gradient.
+Backup of 9 ppg fluid.
+
+f} Tension based on string weight in 10 ppg fluid, (217k Ibs buoyed weight) plus 100k Ibs overpull
+
+Cement volumes are estimates based on 9-5/8" casing set in an 12-1/4" hole with 10% excess in OH and 0% excess
+inside surface casing. TOC at surface.
+
+Pre-flush (Spacer): 20 bbls Chem wash
+
+Lead Slurry: 540 sks (280 bbls) Conventional system with 75 Ib/sk cement, 0.5lb/sk lost circulation, 10%
+expanding agent, 2% extender, 2% CaCl2, 0.2% anti foam, and 0.4% fluid loss
+
+Tail Slurry: 373 sks (77 bbls) Conventional system with 94 Ib/sk cement, 0.3% anti-settling agent, 0.3%
+fluid loss agent, 0.3 Ib/sk lost circulation control agent, 0.2% anti foam, and 0.1% retarder

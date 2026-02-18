@@ -1,0 +1,5 @@
+CREATE DATABASE oil_wells;
+RENAME TABLE
+test.wells TO oil_wells.wells,
+test.production_data TO oil_wells.production_data,
+test.stimulation_data TO oil_wells.stimulation_data;

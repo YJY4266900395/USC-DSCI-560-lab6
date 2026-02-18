@@ -1,0 +1,78 @@
+WELL DATA SUMMARY
+
+OPERATOR:
+
+ADDRESS:
+
+API
+
+WELL FILE #:
+
+SURFACE LOCATION:
+
+FIELD/ PROSPEC’
+
+COUNTY, STATE
+BASIN:
+
+WELL TYPE:
+
+ELEVATION:
+
+SPUD/ RE-ENTRY DATE:
+
+BOTTOM HOLE LOCATION
+
+CLOSURE COORDINATE
+
+TOTAL DEPTH / DATE:
+
+TOTAL DRILLING DAYS:
+
+CONTRACTOR:
+
+PUMPS:
+
+Oasis Petroleum North America, LLC
+
+1001 Fannin Suite 1500
+Houston, TX 77002
+
+Chalmers 5300 21-19 10T
+
+33-053-06022
+
+28637
+
+2,292' FNL & 327' FWL
+Lot 2 Sec. 19, 153N, 100W
+
+Baker / Three Forks
+
+McKenzie County, North Dakota
+
+Williston
+
+Three Forks Horizontal
+
+GL: 2,051"
+KB: 2,076
+
+January 14, 2015,
+
+545.56’ S & 9,879.80' E of surface location or approx.
+2,442.44’ FSL & 306.57' FEL, NE SE Sec. 20, T153N, R100W
+
+Closure Direction: 93.16°
+
+Closure Distance: 9,894.85"
+
+20,562’ on February 18, 2015
+
+94% within target interval
+
+18 days
+
+Nabors #B22
+
+H&H Triplex (stroke length - 12")

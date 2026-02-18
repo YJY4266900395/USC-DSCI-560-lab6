@@ -1,0 +1,62 @@
+é
+
+Continental
+
+RES OW REE S
+
+July 13, 2012
+
+Industrial Commission of North Dakota
+Oil & Gas Division
+
+600 East Boulevard, Dept 405
+Bismarck, North Dakota 58505
+
+Continental Resources, Inc. (CRI) respectfully submits the following information concerning the
+drilling of the Atlanta 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 -- 6H,
+
+Township 153N. Range 101W of the 5" PM.
+
+Section 6, N/2 NW/4 Williams County, North Dakota.
+
+The Atlanta well(s) are located in an environmentally sensitive area in close proximity to a
+subdivision. Therefore, Continental Resources Inc. would like to propose the following automatic
+shut down equipment and level sensing monitoring equipment be deployed on the site to aid in the
+prevention of any accidental release or safety issue. One-line schematic diagrams, flowchart model,
+and general product information are attached for your review and approval with this affidavit.
+
+1)
+
+2)
+
+3)
+
+4)
+
+5)
+
+Tank Side
+a. K-Tek Guided Wave Radar and Z-Bend High Level Switch Level Detectors
+i. High level switches for oil and water tanks
+ii. Battery box with solar backup
+Treater — Separator
+a. Buffer Switch
+b. U003 Gap Switch
+i. 2- AST 4600 pressure transducers — monitor pressure & liquid content of flare
+/ gas sales lines
+ii. Battery box with solar backup
+Wellhead
+i. TotalFlow Controller
+ii. Emergency ShutDown Valve package
+iti. Battery box with solar backup
+
+System Automation through the proposed equipment will provide an independent control
+system on all equipment on site which will be able to shut the well in should any of the other
+equipment be incapacitated or functioning improperly.
+
+Once the system is operational and linked to the CRI Williston Basin SCADA system, a
+notification will be sent directly to the (Sidney, MT) field office, and field personnel in charge
+of the site’s operation. In the event that an alert was sent from the site, CRI estimates that
+
+P.O. Box 1032 + 302 N. Independence « Enid, OK 73702
+Voice (580) 233-8955 + Fax (580) 242-4703

@@ -1,0 +1,31 @@
+Oasis Petroleum
+Well Summary
+Kline Federal 5300 11-18 5B
+Sec. 18 T153N R100W
+McKenzie County, North Dakota
+
+PRODUCTION LINER
+
+Size Interval Weight | Grade | Coupling LL.D. Drift Torque
+4-1/2” 10,224' — 21,197' 11.6 P-110 BIC 3.92" 3.795" 4,500
+Interval Description Collapse Burst Tension
+(psi) a (psi) b (1000 Ibs) ¢
+10,224" — 21,197'| 4-1/2”, 11.6 lb, P-110, BTC, 8rd | _10680/ 2.00 12410 / 1.28 443 12.15
+
+API Rating & Safety Factor
+
+a) Collapse pressure based on full casing evacuation with 9.5 ppg fluid on backside @ 10804' TVD.
+
+b) Burst pressure based on 9000 psi treating pressure with 10.2 ppg internal fluid gradient and 9 ppg
+external fluid gradient @ 10804' TVD.
+
+c) Based on string weight in 9.5 ppg fluid (Buoyed weight: 106k Ibs.) plus 100k Ibs overpull.
+
+Oasis Petroleum does not use Diesel Fuel, as defined by the US EPA in the list below, in
+our hydraulic fracture operations.
+
+68334-30-5 (Primary Name: Fuels, diesel)
+68476-34-6 (Primary Name: Fuels, diesel, No. 2)
+68476-30-2 (Primary Name: Fuel oil No. 2)
+68476-31-3 (Primary Name: Fuel oil, No. 4)
+8008-20-6 (Primary Name: Kerosene)

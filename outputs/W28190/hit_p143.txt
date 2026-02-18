@@ -1,0 +1,22 @@
+Oasis Petroleum
+Well Summary
+Lewis Federal 5300 21-31 6B
+Sec. 31 T153N R100W
+McKenzie County, North Dakota
+
+PRODUCTION LINER
+Size Interval Weight Grade Coupling I.D. Drift Estimated Torque
+4-1/2” | 10256' - 20792' 11.6 P-110, BIC 4.000" 3.875" 4,500psi
+Interval Description Collapse Burst Tension Condition
+(psi) a (psi) b (1000 Ibs) ¢
+10256' - 20792! | 4-1/2”, 11.6 Ib, P-110, BTC, 8rd 7560 / 1.40 10690 / 1.10 385 / 1.88 New
+
+API Rating & Safety Factor
+
+Based on full casing evacuation with 9.5 ppg fluid on backside @ 10872’ TVD.
+
+Burst pressure based on 9000 psi treating pressure with 10.2 ppg internal fluid gradient and 9 ppg
+external fluid gradient @ 10872' TVD.
+
+Based on string weight in 9.5 ppg fluid (Buoyed weight: 107k Ibs.) plus 100k Ibs overpull.
+

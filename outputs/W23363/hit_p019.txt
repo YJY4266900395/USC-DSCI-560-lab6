@@ -1,0 +1,51 @@
+Well Plan:
+
+Build Section:
+
+WELL SYNOPSIS
+
+The Atlanta Federal 10-6H was spud on September 6", 2013 with a surface location of
+
+495’ FNL and 1305’ FWL, NENW Section 6 - Township 153 North and Range 101 West in Williams
+County, North Dakota. This well was operated by Continental Resources Incorporated with the
+objective target of the late Devonian Three Forks Formation.
+
+The plan showed a build section with a kickoff point of 10011’ MD in the Mississippian Lodgepole
+with a 10°/100’ build rate to the landing point of 10911’ MD; 10584’ TVD in the clean gamma
+zone within the Three Forks Formation. This zone started approximately 11’ below the Three
+Forks. The landing target was approximately 15’ into the Three Forks Formation. The plan was to
+drill lateral for an estimated 9655’ to the hardline in the NENE corner of section 8 - Township 153
+North and Range 101 West following the estimated dip of 89.9°. The projected well path is to the
+Southeast with a proposed azimuth of 118.43°.
+
+The offsets provided were the Atlanta wells already drilled on the Atlanta Eco pad. These include
+the Atlanta 1-6H through 4-6H, 11-6H through 14-6H, and Atlanta Federal 5-6H through 9-6H
+drilled by Continental Resources.
+
+Gas logged in the vertical and lateral sections were monitored using Mud Logging Systems —
+Mlogger & Mcontrol. (Primary Logger: ML-137 — Backup Logger ML-077)
+
+M-Logger CC & TC filaments calibrated with 1% and 100% test gas — Chromatograph calibrated
+with 1% test gas (gas—units).
+
+The well was kicked off at 10080’ MD on September 11", 2013 at 00:25 hrs. The up hole markers
+logged were the Charles Salt (8310’ TVD), Base of the Last Salt (9019’ TVD), Mission Canyon
+(9241’ TVD), and the Lodgepole (9784’ TVD). The down hole markers below kick off point
+consisted of the False Bakken (10483’ TVD), Upper Bakken Shale (10493’ TVD), Middle Bakken
+Member (10508’ TVD), Lower Bakken Shale (10542’ TVD), Three Forks Dolomite (10574’ TVD).
+The down hole markers fluctuated between 1-3’ high versus the other Atlanta Eco Pad Three
+Forks Wells and fluctuated 1-3’ in thickness. The Bakken Shale and Middle Bakken Dolomite
+came in 1-2’ higher than the previous Atlanta Wells giving us an estimated landing @ 10589’
+TVD. The Lower Bakken Shale had a thickness of 11’ of actual black-brown shale, but consisted of
+a sticky intermediate layer (Pronghorn) below the shale that was 23’ thick — our landing was
+targeted 15’ below the base of this intermediate layer in the clean Dolomite zone. The landing
+was completed September 12", 2013 at 10:40 hrs @ 10938’ MD, with a Casing point: 10918’ MD;
+10589.28’ TVD and casing location of NENW Sec 6: 786’ FNL & 1818’ FWL (See Atlanta Federal
+10-6H Build and TVD log for more information regarding samples & formation thicknesses)
+
+Gas observed in the build section showed gas averaging 52 units through the Lodgepole
+formation with trace amounts of background sample shows and oil shows. Both Upper and
+Lower Bakken Shale resulted in 129-2205 units. The Middle Bakken Member ranged from 230-
+1259 units, averaging 290 units. The Three Forks ranged from 230-480 units, averaging 263 units.
+Connection gasses ranged from 521 units to 1267 units through the entire build section. (See
+Atlanta Federal 10-6H Build Log, for more detailed gas data)

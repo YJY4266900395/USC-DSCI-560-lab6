@@ -1,0 +1,68 @@
+5.0 WELLBORE
+
+The surface location is SW SW SEC 31, T153N, R1OOW, 713' FSL & 320'FWL,
+McKenzie County, North Dakota. Ground elevation is 2,158’ and KB elevation was
+2,183’, referenced to the kelly bushing of Nabors B27. The curve was landed in the Three
+Forks at 11,295’ MD; 10,884.15’ TVD. The lateral was drilled to TD at: 20,550’ MD,
+with a projection to bit at: 10,932.98’ TVD, 9,893.94’ VS, SE SE SEC 32, T153N,
+R1OOW. Figure 5.1 shows a cross-section of the lateral.
+
+11100 12100 13100
+
+14100 15100
+
+1611
+
+00
+
+17100 18100 19100 20100
+
+10840 : :
+
+10850
+
+jeasured Depth (feet)
+
+OIUMBINELOGGING
+
+10860 }
+
+10870
+
+10880
+
+10890
+
+10900 +-==—
+10910 4-==—
+$
+10920 4B
+10930 +S §—— Pronghorn Top. ——®— Three Forks Top)
+= — — Target Top — — Target Base
+o =
+
+Casing Point a
+
+Claystonel =—©—Wellbore
+
+Trip(s)
+
+11100 12100 13100
+
+14100 15100
+
+‘Total Ga
+
+Total Gas
+
+11100 12100 13100
+
+Figure 5.0 Wellbore Cross Section
+
+14100 15100
+
+16100
+
+17100 18100 19100 20100
+
+(suun Idv) YS

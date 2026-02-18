@@ -1,0 +1,36 @@
+Well Evaluation
+Synopsis
+
+The Jefferies 5301 43-12B [SWSE Section 12, T153N, R101W] is a horizontal well located in
+the Baker Field in McKenzie County, North Dakota approximately 6 miles south of Williston.
+The prognosis proposed a single lateral leg trending due south to be drilled through sections
+13 and 24 from the SWSE corner of Section 12 to the SE SW corner of Section 24. The lateral
+portion of the Jefferies 5301 43-12B targeted the porous silty sandstone of the Middle Member
+of the Bakken Formation, approximately 10’ to 19’ below the Upper Shale of the Bakken
+Formation.
+
+Geologic Assessment
+
+Methods
+
+Geologic support of the Jefferies 5301 43-12B was provided by experienced RPM Well Site
+Geologists. Gas and chromatograph levels were measured using iBall Instruments
+Bloodhound (Bloodhound) real time gas detector and chromatograph system. The
+Bloodhound gas detection system uses non-dispersive infrared and chemical sensor gas
+detection to evaluate gases liberated from the formation by the drill bit and carried to the
+surface by the drilling fluid.
+
+The Bloodhound was interfaced with a RigWatch Drilling Recorder system. RigWatch
+provided rate of penetration (ROP), on-off bottom and pump strokes to the Bloodhound and
+received total gas information from the Bloodhound for viewing on location and remotely.
+
+Under the direction of RPM well site geologists, rig crews caught lagged drill cutting samples at
+30’ intervals from 8,300’ through 10,780’. Samples were logged at 10’ intervals during the
+curve from 10,780’ to 11,050’. Throughout the lateral section, samples were continuously
+logged at 30’ intervals until total depth 21,250’.
+
+Sampled drill cuttings were examined wet and dry under a binocular microscope using plain
+(broad spectrum) and transmitted light. Cuttings were evaluated for hydrocarbon “cut” by
+immersion in Entron critical cleaning solvent and inspected under a UV fluoroscope. Alizarin
+red stain and ten percent hydrochloric acid were used to determine the calcareous and
+dolomitic content of rocks and cementing.

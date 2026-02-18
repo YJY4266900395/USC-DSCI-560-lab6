@@ -1,0 +1,20 @@
+A Gyrodata Directional Survey
+FINAL DEFINITIVE COPY
+for
+OASIS PETROLEUM
+Lease: Kline Federal Well: 5300 41-18 10B ST2, 6” Hole
+
+Location: Nabors #486, McKenzie County, North Dakota
+
+Job Number: RD0814M1778T2 Proposed Well Direction: 90.000 deg
+
+Run Date: 26 Feb 2015 Depth Reference: Rotary Table
+
+Surveyor: Blake Hunter Air Gap (RKB to Ground / RKB to MSL): 25.00
+
+Calculation Method: MINIMUM CURVATURE Ground Elevation (Ground to MSL / MSL to Mudline): 2057.00
+Survey Latitude: 48.068944 deg. N Longitude: 103.603319 deg. W Vertical Section Calculated from Well Head Location
+
+Magnetic Declination: 8.1900 deg Closure Calculated from Well Head Location
+
+Total Correction: 8.1900 deg Horizontal Coordinates Calculated from Well Head Location

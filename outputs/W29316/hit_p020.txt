@@ -1,0 +1,11 @@
+5.0 WELLBORE
+
+The surface location is SW SW SEC 31, T153N, R100W, 647' FSL & 320' FWL,
+McKenzie County, North Dakota. Ground elevation is 2,158’ and KB elevation was
+2,183’, referenced to the kelly bushing of Nabors B27. The curve was landed in the
+Middle Bakken at 11,152’ MD; 10,815.50’ TVD. The lateral was drilled to TD at:
+20,440’ MD, with a projection to bit at: 10,881.77’ TVD, 9,860.47’ VS, SE SE SEC 32,
+T153N, R1OOW, 581.88' FSL & 331.53' FEL. Figure 5.1 shows a cross-section of the
+lateral.
+
+Figure 5.1 Wellbore Cross Section

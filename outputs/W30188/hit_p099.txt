@@ -1,0 +1,54 @@
+ELEVATION: 2,110’ SL Lewis Federal 5300 11-31 3B FORMATION: Bakken
+Proposed Wellbore Schematic
+
+Surface casing
+13 3/8” 54.5# J-55
+17 % “ Diam. Hole
+
+Dakota casing
+9 5/8” 36# J-55
+12%” Diam. Hole
+
+Surface casing: 4,900' MD
+
+Dakota casing: 6,016’ MD
+
+7" Shoe: 11,045’ MD, 10,765’ TVD, 494’ FWL of Sec. 31 (344' past the
+hardline)
+
+Top of cement: 4,810’ MD
+
+Top of 4.5” liner: 10,276’ MD
+
+KOP: 10,226' MD
+
+End of liner: 20,895' MD
+
+TD @ 20,895’ MD; 150’ FNL of Sec. 32 (0' short of hardline)
+
+Deepest point of entry (pressure actuated toe sleeve): 20,835' MD, 210’ FWL
+Sec 32 (60' short of hardline)
+
+Planned for 50 or more stages
+
+Pressure Pressure
+Actuated Actuated
+sleeve sleeve
+12,500 psi 11,500 psi
+
+Top of 4%" Liner
+
+Float
+Collar
+
+4%" 13.5# P-110 GBDC.
+
+7” 32# P-110 BTC/LTC 6” Diam. Hole
+8 %” Diam. Hole Wet shoe with ability to frac out the shoe
+
+OASIS PETROLEUM NA LLC
+
+Lewis Federal 5300 11-31 3B Williams County, North Dakota
+Wellbore: T153N-R100W Sec. 31 & 32 Updated: 4-12-2018 TR
+SHL: 1083’ FNL & 262’ FWL T153N-R100W Sec. 31
+

@@ -1,0 +1,44 @@
+Form 2
+
+LYNES, INC.
+
+Basic Earth Science Systems, Inc. Game & Fish #34-3 1
+
+Operator . ‘Well Name and No. OST No.
+
+LY-231
+
+Comments relative to DST #1 run on Game & Fish #34~3 in McKenzie
+County, North Dakota, Sec. 3-15/7N-101W for Basic Earth Science
+
+Systems Inc.
+
+The calculations here-in performed were accomplished by plotting the
+time and pressure data on semi-log scale and using the resulting
+slope and extrapolated pressures from the Horner plot.
+
+Jhe initial. formation pressure extrapolated to 4490 psi with a slope
+of 243 psi/cycle creating a sub-surface pressure gradient of .488
+psi/ft. at the recorder depth of 9206 feet.
+
+The average effective permeability for this zone calculated to 2.32 md.
+This was based on 911 feet of 40 API gravity oi] being recovered in
+
+100 minutes flowing time. The entire second flow was restricted,
+making the fluid recovery and reported gas flow rate low. With the
+information available, it is impossible to pinpoint the true flow
+
+rate, permeability, or gas-oil ratio. It is quite possible that this
+test could have flowed to surface. The skin factor and damage ratio
+numbers are high due to tool restriction and do not suggest any
+significant well-bore damage was present at the time of this test.
+
+If you should have any questions concerning this test, please do not
+
+hesitate to call, We appreciate your work and look forward to serving
+you again.
+
+R.C. ‘Butler
+Regional Engineer
+
+RCB/bss

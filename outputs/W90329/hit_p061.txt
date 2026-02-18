@@ -1,0 +1,38 @@
+Surface Facilities Diagram
+
+SWD Dike Schematics
+
+Carson SWD 5301 12-24
+
+Oasis Petroleum
+
+Section 24, T153N R101W
+McKenzie County, North Dakota
+
+155 fi
+
+i
+H H
+i !
+i Injection 1
+H Pump H
+\ House i
+! i 190 ft.
+' H
+'
+1
+1
+! i
+'
+' '
+. '
+
+3.6 fi. (height)
+---- Berm
+—— Line Pipe
+Dike Containment = 19,231 bbls
+
+Pump House & Tanks Volume = 402 bbls
+Effective Dike Containment = 18,829 bbls
+
+24

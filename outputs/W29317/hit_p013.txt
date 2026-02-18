@@ -1,0 +1,33 @@
+1.0 INTRODUCTION
+
+Gramma Federal 5300 41-31 13T is an east lateral Three Forks first bench well located in
+SW SW SEC 31, T153N, R100W in McKenzie County, North Dakota. The primary pay
+zone extended from 13’-24’ below the top of the Three Forks. This pay zone was picked
+for its production potential and quality of reservoir rock. The objective was to steer the
+well within the defined pay zone and within the legal requirements of the state.
+Directional drilling was performed by RPM and MWD services were performed by Ryan
+Directional Services. Mark Miller and Adam Harris were the primary well site geologists;
+providing geo-steering and mud logging from Columbine Logging, Inc.
+
+Well Information
+API #: 33-053-06232 Field: Baker
+Spud Date: 01/19/2015 TD Date: 3/2/2015
+
+Surface Location: SW SW SEC 31, T153N, R100W, 713' FSL & 320'FWL, McKenzie
+County, North Dakota
+
+Intermediate Casing Point: SW SW SEC 31, T153N, R100W, McKenzie County,
+North Dakota; 11,295’ MD, 10,883’ TVD
+
+Bottom Hole Location: SE SE SEC 32, T153N, R100W, McKenzie County, North
+Dakota, 20,550’ MD, 10932.38’ TVD
+
+Surface Elevation: 2,158' KB: 2183'
+
+Casing Shoe: 11,295’ MD, 10,883’ TVD Total Depth Drilled: 20550’
+Operator: Oasis Petroleum North America LLC Rig: Nabors B27
+
+Well-site Geologist: Mark Miller, Adam Harris DD: RPM
+
+Mud logging: Columbine Logging Mud Service: Mi Swaco
+MWD: Ryan Directional Services Drilling Mud: Invert, Brine

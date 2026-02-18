@@ -1,0 +1,87 @@
+OPERATOR:
+
+ADDRESS:
+
+WELL NAME:
+
+API #:
+
+WELL FILE #:
+
+SURFACE LOCATION:
+
+FIELD/ OBJECTIVE:
+
+COUNTY, STATE:
+
+RESERVATION:
+
+BASIN:
+
+WELL TYPE:
+
+ELEVATION:
+
+SPUD DATE:
+
+BOTTOM HOLE LOCATION:
+
+CLOSURE COORDINATES:
+
+TOTAL DEPTH / DATE:
+
+TOTAL DRILLING DAYS:
+
+PUMP INFO:
+
+COMPANY MEN:
+
+WELL DATA SUMMARY
+
+Oasis Petroleum North America, LLC
+
+1001 Fannin Suite 1500
+Houston, TX 77002
+
+Lewis Federal 5300 11-31 2B
+
+33-053-06549
+
+30189
+
+1,050' FNL & 265' FWL
+Lot 1 Section 31, T153N, R100W
+
+Baker Field / Middle Bakken
+
+McKenzie County, North Dakota
+
+N/A
+
+Williston Basin
+
+Horizontal Development
+
+GL: 2,110°
+KB: 2,135"
+
+January 25, 2019
+
+397.23' N & 10,077.03' E of surface or approx.
+652.77' FNL & 180.71' FEL Lot 4 Sec. 32, T153N, R100W
+
+Closure Azimuth: 87.74°
+Closure Distance: 10,084.86'
+
+20,870' on February 13, 2019
+96.6% within target interval
+
+20 days
+
+Stroke length - 12"
+
+Liner Inner Diameter - 6" for surface; 5.0" for vertical, curve and lateral
+
+Doug Rakstad, lan Anderson, Mike Ziegler, Mike Crow
+
+A GEOLOGY SERVICE

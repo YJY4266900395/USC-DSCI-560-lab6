@@ -1,0 +1,44 @@
+SURFACE CAS
+
+Oasis Petroleum
+
+Well Summary
+Kline Federal 5300 11-18 2T2
+Sec. 18 T153N R100W
+McKenzie County, North Dakota
+
+NG AND CEMENT DESIGN
+
+Make-up Torque (ft-Ibs)
+
+Size Interval
+
+API Rating & Safety Factor
+
+a) Collapse pressure based on full casing evacuation with 9 ppg fluid on backside (2068' setting
+depth).
+b) Burst pressure based on 9 ppg fluid with no fluid on backside (2068' setting depth).
+
+c) Based on string weight in 9 ppg fluid at 2068' TVD plus 100k# overpull. (Buoyed weight equals
+
+97k Ibs.)
+
+Cement volumes are based on 13-3/8" casing set in 17-1/2" hole with 50% excess to circulate cement back to surface.
+
+Mix and pump the following slurry.
+
+Pre-flush (Spacer): 20 bbls fresh water
+
+Lead Slurry: 635 sks (328 bbls) 2.9 yield conventional system with 94 Ib/sk cement, .25 Ib/sk D130 Lost
+Circulation Control Agent, 2% CaCL2, 4% D079 Extender, and 2% D053 Expanding Agent.
+
+Tail Slurry: 349 sks (72 bbls) 1.16 yield conventional system with 94 Ib/sk cement, .25 Ib/sk Lost Circulation
+
+Control Agent, and .25% CaCL2.
+
+Weight Grade Coupling LD. Drift Minimum Optimum Max
+13-3/8" 0’ to 2,068" 54.5 J-55 sTC 12.615" | 12.459" 4,100 5,470 6,840
+Interval Description Collapse Burst Tension
+(psi) a (psi) b (1000 Ibs) c
+0' to 2,068" 13-3/8", 54.5#, J-55, STC, 8rd 1130/ 1.17 2730 / 2.82 514/2.61
+

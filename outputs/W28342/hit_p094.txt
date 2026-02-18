@@ -1,0 +1,42 @@
+Oasis Petroleum
+Well Summary
+Chalmers 5301 44-24 2TR
+Sec. 24 T153N R101W
+McKenzie County, North Dakota
+
+PRODUCTION LINER
+= Interval Weight] Grade
+412 | 10,17" — 21,028 | 13.6 | P-110
+
+| Interval Length | Description Collapse Burst Tension
+
+| Ts
+
+(psi) a ane (psi) b (1000 Ibs)
+10,171'-21,028'| _ 10,086' 4-1/2", 13.5 Ib, P-110, BTC, 8rd | 10670 / 2.00 12410 / 1.28 443 /1.99
+
+API Rating & Safety Factor
+
+a) Based on full casing evacuation with 9.5 ppg fluid on backside @ 10,769’ TVD.
+
+b) Burst pressure based on 9000 psi treating pressure with 10.2 ppg internal fluid gradient and 9 ppg
+external fluid gradient @ 10,769" TVD.
+
+c) Based on string weight in 9.5 ppg fluid (Buoyed weight: 122k Ibs.) plus 100k Ibs overpull.
+
+Cemented Liner — Based on 4,5” liner from TD to liner top, 10% excess
+
+Pre-flush (Spacer): 30 bbls MudPush
+
+Lead Slurry: 647 sks (183 bbls) 14.80 lb/gal Conventional cement with 61.1 Ib/sk D907 Cement, 23.45lb/sk
+D035-BCA Cementing Additive, 0.2% D065 Dispersant, 0.2% D046 Anti Foam, 0.4% D167
+Fluid Loss, 35% Silica, 0.4% D198 Retarder
+
+Oasis Petroleum does not use Diesel Fuel, as defined by the US EPA in the list below, in our
+hydraulic fracture operations.
+
+68334-30-5 (Primary Name: Fuels, diesel)
+68476-34-6 (Primary Name: Fuels, diesel, No. 2)
+68476-30-2 (Primary Name: Fuel oil No. 2)
+68476-31-3 (Primary Name: Fuel oil, No. 4)
+8008-20-6 (Primary Name: Kerosene)

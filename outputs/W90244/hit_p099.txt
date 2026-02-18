@@ -1,0 +1,42 @@
+Exhibit 3 — Proposed Injection Program
+
+June 13, 2012
+
+Buck Shot SWD 5300 31-31
+
+Oasis Petroleum North America, LLC
+Section 31, T1S3N R100W
+
+McKenzie County, North Dakota
+
+Application for Fluid Injection
+PROPOSED INJECTION PROGRAM
+
+The Buck Shot SWD 5300 31-31 well will be used to inject produced water from wells in the Indian Hills
+area - Oasis Bakken and Three Forks wells already on production, in the process of completion, and those
+soon to be drifled in the four township area of 52-153N and 100-101 W into the Dakota formation.
+Injection depths will be determined after the well is drilled and logged.
+
+The Buck Shot SWD will utilize the existing tanks and pump facilities of the Oasis-operated BWL SWD
+5201 11-3. The injection pump will send water to both the BWL SWD and Buck Shot SWD. There will
+be a pressure transducer at the outlet of the pump that limits the maximum pressure of the discharge to the
+permitted pressure. This pressure transducer will communicate to the VFD that controls the pump to
+maximize the efficiency of the pump as well as shut it off at the max allowable pressure. There will be 2
+flow meters after the tee in the discharge line, one for the BWL SWD and the other for the Buck Shot
+SWD.
+
+The flowline to the Buck Shot wellhead will tap into the existing 6 inch flexsteel pipe that is currently in
+operation for the BWL SWD, This flowline is rated for 2250 psi, approximately 700 psi above the
+maximum allowable pressure for the Buck Shot SWD. The lease operator will be on Jocation on a daily
+basis to monitor both SWD locations and the flowline that feeds both the BWL SWD and Buck Shot
+SWD.
+
+The wellhead and horizontal lateral of the Oasis-operated Lewis Federal 5300 31-31H well is within the
+‘4 mile area of review but no corrective action is required as the lateral of the Lewis Federal 5300 31-31H
+is completed within the Bakken Formation which is separated from the Dakota Group by the Swift
+confining layer and several thousand feet of other impermeable shales.
+
+The proposed Buck Shot SWD is needed to provide a more local disposal facility in the area to reduce
+costs and ease the burden on regional disposal wells, it will supplement the existing BWL SWD. The
+anticipated initial injection rate of the well wiil be 5,000 bwpd at 1,000 psig pressure. However, this rate
+may increase with additional drilling in the area, subject to the maximum pressure ceiling.

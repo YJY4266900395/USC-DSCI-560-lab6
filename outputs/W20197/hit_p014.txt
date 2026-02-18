@@ -1,0 +1,39 @@
+Well Information
+
+Operator: Oasis Petroleum API #: 33-053-03413-00-00
+Address: 1001 Fannin Suite 202 IND Well File #: 20193
+Houston, TX 77002
+Surface Location: SW NW Sec. 30, T153N - R100W
+Well Name: Wade Federal 5300 21-30H
+Footages: 2220'FSL & 230' FWL
+|Field/ Prospect: Wildcat
+County, State: McKenzie County, North Dakota
+Elevation: GL: 2,013'
+KB: 2,038' Williston
+‘Spud Date: 5-Apr-11 Well Type: Horizontal Middle Bakken
+Contractor: Nabors #149 (Chemical Company Dynamic Drilling Fluids
+Toolpushers: Dwight Knutson / Larry Erie Mud Engineer Brent Blair
+Field Supervisors: Mark Lawler, Eli Pucket |H2S MONITORING: NA
+Directional Drilling RPM MWD. Ryan Energy
+Mark Lawlar, Eli Pucket, Rudy Salivar Jace Pitre, Chris Riggin
+Wellsite Geologist Joe Large Rock Sampling: 30' from 8,250 to 10,710
+Mike Grams 10' from 10,710' to 11,020°
+30’ from 11,020’ to 20,481"
+Prospect Geologist Mike Box Gas Detector Bloodhound Gas Detection
+Sample Examination: Binocular microscope & fluoroscope Sample Cuts: Trichloroethylene
+Horizontal Target Middle Bakken Porosity
+Key Offset Wells:
+Harper Oil Company Verlin Fossum Et Al 26-1 NW SE Sec. 26 T153N R101W McKenziel County, ND
+Harper Oil Company Federal Land Bank 1-26 NE NW Sec. 26 T153N R101W McKenziel County, ND
+Pumps: #1 & #2: National 10P-1300 - 5.5" liners Output: 0.0690 bbi/stk
+
+Mud Type: Diesel invert mud 2,018 - 11,023'; Saltwater 11,023' - 20,4481 (TD)
+
+Surface: 9 5/8" 36# J-55 @ 2,018'
+
+(Casing: .
+Intermediate: 7" 207 Jts 29# P-110, 32 Jts 32# P-110; float collar & casing shoe set to 11,008'
+Hole Size: 13 1/2" from conductor pipe at 60' to 2,025' 8 3/4" to 11,023' 6" to 20,481' (TD)
+
+Total Drilling Days: 18 days
+

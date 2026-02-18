@@ -1,0 +1,43 @@
+Oasis Petroleum
+Weill Summary
+Chalmers 5300 21-19 6B
+Sec. 19 T153N R100W
+McKenzie County, North Dakota
+
+SURFACE CASING AND CEMENT DESIGN
+
+| | Make-up Torque (ft-ibs) |
+| Size | Interval | Weight | Grade | Coupli LD. Drift Minimum _| Optimum | Max
+
+13-318" [ 0'to2,126 | 54.5 155 STC 12.615" | 12.450" | 4100 [| 5470 | 6,840
+
+[interval [Description |__Collapse
+(psi) a
+13-916", 54.5H, J-55, STC, 8rd | _1130/1.14
+
+API Rating & Safety Factor
+
+a) Collapse pressure based on full casing evacuation with 9 ppg fluid on backside (2126' setting
+depth).
+b) Burst pressure based on 9 ppg fluid with no fluid on backside (2126' setting depth).
+
+¢) Tension based on string weight in 9 ppg fluid at 2126’ TVD plus 100k# overpull. (Buoyed weight
+equals 100k Ibs.)
+
+Tension Cost per ft
+(1000 Ibs) c
+
+514/2.57
+
+0' to 2,126" 2730 / 2.74
+
+Cement volumes are based on 13-3/8" casing set in 17-1/2" hole with 50% excess to circulate cement back to surface.
+Mix and pump the following slurry.
+
+Pre-flush (Spacer): 20 bbls fresh water
+
+Lead Slurry: 629 sks (325 bbls) 2.9 yield conventional system with 94 Ib/sk cement, .25 Ib/sk D130 Lost
+Circulation Control Agent, 2% CaCL2, 4% D079 Extender, and 2% D053 Expanding Agent.
+
+Tail Slurry: 374 sks (77 bbis) 1.16 yield conventional system with $4 Ib/sk cement, .25 !b/sk Lost Circulation
+Control Agent, and .25% CaCL2.

@@ -1,0 +1,72 @@
+WELL DATA SUMMARY
+
+OPERATOR:
+
+ADDRESS:
+
+WELL NAME:
+
+API#:
+
+WELL FILE #:
+
+SURFACE LOCATION:
+
+FIELD/ OBJECTIVE:
+
+COUNTY, STATE
+
+ELEVATION:
+
+SPUD/ RE-ENTRY DATE:
+
+BOTTOM HOLE LOCATION:
+
+CLOSURE COORDINATES:
+
+TOTAL DEPTH / DATE:
+
+TOTAL DRILLING DAYS:
+
+CONTRACTOR:
+
+Oasis Petroleum North America, LLC
+
+1001 Fannin Suite 1500
+Houston, TX 77002
+
+Kline Federal 5300 31-18 6B
+
+33-053-06057
+
+28756
+
+2,457' FSL & 238' FWL
+Lot 3 Section 18, T153N, R100W
+
+Baker Field / Middle Bakken Member
+
+McKenzie County, North Dakota
+
+Williston
+
+Middle Bakken Member
+
+GL: 2,008'
+KB: 2,033'
+
+April 4, 2015
+
+841.30' south & 9,949.84' east of surface location or approx.
+1,615.70' FSL & 301.31' FEL, NE SE Section 17, T153N, R100W
+
+Closure Azimuth: 94.83°
+Closure Distance: 9,985.34"
+
+20,597' on April 15, 2015.
+
+92% within target interval
+
+12 days
+
+Nabors B22

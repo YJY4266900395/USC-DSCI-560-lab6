@@ -1,0 +1,72 @@
+WELL DATA SUMMARY
+
+OPERATOR:
+
+ADDRESS:
+
+WELL NAME:
+
+API #:
+
+WELL FILE #:
+
+SURFACE LOCATION:
+
+FIELD/ OBJECTIVE:
+
+COUNTY, STATE
+
+ELEVATION:
+
+SPUD/ RE-ENTRY DATE:
+
+BOTTOM HOLE LOCATION:
+
+CLOSURE COORDINATES:
+
+TOTAL DEPTH / DATE:
+
+TOTAL DRILLING DAYS:
+
+CONTRACTOR:
+
+Oasis Petroleum North America, LLC
+
+1001 Fannin Street, Suite 1500
+Houston, Texas 77002
+
+Wade Federal 5301 21-30 12T
+
+33-053-06129-00-00
+
+28976
+
+1,640' FNL & 270' FWL
+SW NW Section 30, T153N, R100W
+
+Baker Field / Three Forks
+
+McKenzie County, North Dakota
+
+Williston
+
+Three Forks Horizontal
+
+GL: 1,999"
+KB: 2,024"
+
+September 30, 2014
+
+101.7' north & 9,962.2' east of surface location or approx.
+1,538.3' FNL & 281.2' FEL, SE NE Section 29, T153N, R100W_
+
+Closure Azimuth: 89.4°
+Closure Distance: 9,962.7"
+
+20,430' on December 01, 2014
+
+80% within target interval
+
+21 days
+
+Nabors B25

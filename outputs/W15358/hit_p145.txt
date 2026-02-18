@@ -1,0 +1,86 @@
+4
+
+OPERATOR:
+
+ADDRESS:
+
+WELL NAME:
+
+SURFACE LOCATION:
+
+BOTTOM HOLE LOCATION:
+
+FIELD:
+
+COUNTY, STATE
+BASIN:
+
+WELL TYPE:
+
+BASIS OF PROSPECT:
+
+ELEVATION:
+
+SPUD DATE:
+
+TOTAL DEPTH / DATE:
+
+TOTAL DRILLING DAYS:
+STATUS OF WELL:
+
+CONTRACTOR:
+
+Lateral #1
+
+Sidetrack #1
+
+WELL DATA SUMMARY
+
+Nance Petroleum Corporation
+P.O, Box7168, 550 N. 31st. St, Ste. #500
+
+Billings, Montana 59101
+(406) 245-6248
+
+Lewis & Clark #2-4H
+
+33-053-02556
+15358
+
+2,084' FNL, 332’ FEL
+SE NE Section 4, T153N, RI01W
+
+4,230.87' North & 1,709.7' West of surface location
+Approx. 863.13' FNL, 2,041.7'FEL NW NE Sec. 4
+
+4,350.45" North & 3,843.62' West of surface location
+Approx. 743.6' FNL, 1,116.8’ FWL, NW NW Sec. 4
+
+Baker Field
+
+McKenzie County, North Dakota
+
+Williston
+
+Horizontal Nesson (Mission Canyon)
+
+Well Control & 3D Seismic
+
+SUB: 21°
+
+GL: 1,851"
+
+KB: 1,872"
+
+3/13/2003 CST 9:00:00 PM
+
+Lateral # 1: 114,605' MD, 22:00 CDT on 04/23/03
+Sidetrack #1: 13,755' MD, 11:20 CDT on 05/03/03
+40
+
+Open hole completion in Nesson lateral
+
+Nabors Drilling USA - Rig #417
+
+Ac rOloty servicer
+

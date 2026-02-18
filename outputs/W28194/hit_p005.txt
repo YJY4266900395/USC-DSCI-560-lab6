@@ -1,0 +1,114 @@
+ELEVATION: 2132’ GL Lewis Federal 5300 21-31 5B FORMATION: Bakken
+Wellbore Schematic
+
+Surface casing
+13 3/8” 54.5# J-55
+@ 3310’
+
+Dakota casing
+9 5/8” 36# J-55
+@6121'
+
+Hardline @ 150° FSL Hardline @ 150’ FNL
+of Sec. 31 of Sec. 32
+
+Completion Details
+
+35 stage PnP, 2 Sleeves
+Slickwater Job
+
+5990853 Ibs of proppant
+323544 bbls of fluid
+
+Top of 4%" Liner Distance from TD to
+@ 10220’ Hardline: 11.4”
+
+Deepest Perf: 20791’
+
+1
+1
+'
+1
+1
+1
+'
+‘
+1
+1
+'
+1
+1
+"
+f
+1
+1
+'
+1
+'
+1
+1
+1
+1
+1
+'
+1
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+1
+'
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+'
+1
+1
+'
+'
+1
+1
+'
+1
+1
+1
+1
+1
+1
+1
+}
+i
+i
+i
+i
+i
+
+4 2" 13.5% P-110 BTC
+
+Distance from hardline 7” 32# P-410 BTCILTC @ 20850°
+to 7” EOC 485.0 @ 11130
+
+OASIS PETROLEUM NA LLC
+
+Lewis Federal 5300 21-31 5B McKenzie County, North Dakota
+Wellbore: T153N-R100W Sec. 31 & 32
+SHL: 2552’ FNL & 259’ FWL T153N-R100W Sec. 31
+

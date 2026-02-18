@@ -1,0 +1,49 @@
+Cc
+
+Oasis Petroleum
+Well Summary
+halmers Wade Federal 5301 44-24 12TXR
+Sec. 24 T153N R101W
+McKenzie County, North Dakota
+
+INTERMEDIATE CASING AND CEMENT DESIGN
+
+Intermediate Casing Design
+
+Make-up Torque (ft-lbs)
+
+Size Interval Weight| Grade Coupling 1.D. Drift Minimum Optimum Max
+7 O'- 11540" 32 HCP-110 LTC 6.094” | 6.000"** 6,730 8,970 11210
+**Special Drift
+Interval Description Collapse Burst Tension
+(psi) a (psi) b (1000 Ibs) c
+O'- 11540" 7”, 32#, HCP-110, LTC, 8rd 11890 / 2.13* 12450 / 1.28 897 / 2.17
+6777' - 9095" 7”, 32#, HCP-110, LTC, 8rd 11890 / 1.88** 12450 / 1.30
+
+c.
+
+API Rating & Safety Factor
+*Assume full casing evacuation with 10 ppg fluid on backside. **Assume full casing
+evacuation with 1.2 psi/ft equivalent fluid gradient across salt intervals.
+Burst pressure based on 9000 psig max press for stimulation plus 10.2 ppg fluid in
+casing and 9 ppg fluid on backside-to 10,630' TVD.
+Based on string weight in 10 ppg fluid, (295k Ibs buoyed weight) plus 100k Ibs overpull.
+
+Cement volumes are estimates based on 7" casing set in an 8-3/4" hole with 30% excess.
+
+Pre-flush (Spacer):
+
+Lead Slurry:
+
+Tail Slurry:
+
+50 bbls Saltwater
+40 bbls Weighted MudPush Express
+
+219 sks (86 bbls) 2.21 yield conventional system with 47 Ib/sk cement, 37 Ib/sk D035.
+Extender, 3.0% KCI, 3.0% D154 Extender, 0.3% D208 Viscosifier, 0.07% Retarder, 0.2% Anti
+Foam, 0.5lb/sk D130 LCM
+
+679 sks (186 bbls) 1.54 yield conventional system with 94 Ib/sk cement, 3.0% KCI, 35.0%
+Silica, 0.5% Retarder, 0.2% Fluid Loss, 0.2% Anti Foam, 0.5 Ib/sk LCM
+

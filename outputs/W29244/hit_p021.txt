@@ -1,0 +1,64 @@
+4
+
+1020 FEE
+SECTION 18, 7
+
+PAD LAYOUT
+‘OASIS PETROLEUM NORTH AMERICA, LLC
+1001 FANNIN, SUITE 1500, HOUSTON, TX 77002
+"KUNE FEDERAL §300 11-18 37°
+'T FROM NORTH LINE AND 290 FEET FROM WEST LINE
+'159N, RIQOW, Sth P.M, MCKENZIE COUNTY, NORTH DAKOTA,
+
+EXISTING
+ASH FEDERAL
+eo 11-18T
+
+i
+PIPFY ieee
+
+WATER
+TANK’
+
+es,
+r
+|
+
+=
+
+TRE,
+
+ATER:
+
+NOTE 1: Pad dimensions shown are
+to usable area, the v-ditch and berm
+areas shall be built to the outside of
+the pad dimensions,
+
+NOTE 2: All existing facilities to be
+removed on construction expansion.
+
+x
+
+VOICH DETAIL DETAIL
+Prop
+
+Lon rin
+
+TE:
+utitias ‘ocatio
+
+© 2014, I
+
+INTERSTATE
+ENGINEERING
+
+Cont
+
+Cortours
+
+shown ore prolimnary on'y, « complete
+is recommended before construction
+
+INTERSTATE ENGINEERING, INC.
+

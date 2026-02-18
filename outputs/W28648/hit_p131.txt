@@ -1,0 +1,36 @@
+Oasis Petroleum
+Well Summary
+Chalmers 5300 21-19 9T2
+Sec. 19 T153N R1OOW
+McKenzie County, North Dakota
+
+PRODUCTION LINER
+
+Weight | Grade | Coupling
+
+Collapse
+(psi) a (psi) b
+40870/4.97 | 12410/1.28
+
+(1000 Ibs) ¢
+443 / 2.01
+
+10325' - 20670° 4-1/2", 13.5 Ib, P-110, BTC
+
+API Rating & Safety Factor
+
+a) Based on full casing evacuation with 9.5 ppg fluid on backside @ 10919' TVD.
+
+b) Burst pressure based on 9000 psi treating pressure with 10.2 ppg internal fluid gradient and 9 ppg
+external fluid gradient @ 10919 TVD.
+
+c) Based on string weight in 9.5 ppg fluid (Buoyed weight: 119k ibs.) plus 100k Ibs overpull
+
+Oasis Petroleum does not use Diesel Fuel, as defined by the US EPA in the list below, in our
+hydraulic fracture operations.
+
+68334-30-5 (Primary Name: Fuels, diesel)
+68476-34-6 (Primary Name: Fuels, diesel, No. 2)
+68476-30-2 (Primary Name: Fuel oil No. 2)
+68476-31-3 (Primary Name: Fuel oil, No. 4)
+8008-20-6 (Primary Name: Kerosene)

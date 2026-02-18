@@ -1,0 +1,40 @@
+Oasis Petroleum
+Well Summary
+Lewis Federal 5300 11-31 3B
+Sec. 31 T153N R1OOW
+McKenzie County, North Dakota
+
+SURFACE CASING AND CEMENT DESIGN
+
+Make-up Torque (ft-lbs)
+Size Interval Weight Grade Coupling ID. Drift Minimum Optimum Max
+13-3/8" 0’ to 2100 54.5 J-55 sTC 12.615" | 12.459" 4,100 5,470 6,840
+Interval Description Collapse Burst Tension
+(psi) a (psi) b (1000 Ibs) c
+0’ to 2100 13-3/8", 54.5#, J-55, STC, 8rd 1400 / 2.04 2730 / 2.76 689 / 3.45
+
+a) Based on fu
+
+API Rating & Safety Factor
+
+| casing evacuation with 9 ppg fluid on backside (2100' setting depth).
+
+b) Burst pressure based on 9 ppg fluid with no fluid on backside (2100' setting depth).
+c) Based on string weight in 9 ppg fluid at 2100’ TVD plus 100k# overpull. (Buoyed weight equals 99k Ibs.)
+
+Cement volumes are based on 9-5/8" casing set in 13-1/2" hole with 40% excess to circulate cement back to surface.
+Mix and pump the following slurry.
+
+Pre-flush (Spacer):
+
+Lead Slurry:
+
+Tail Slurry:
+
+10 bbls fresh water
+
+884 sks (313 bbls) Conventional system with 75 Ib/sk cement, 2% extender, 10% expanding agent,
+2% CaCl2 and 0.5 Ib/sk lost circulation control agent
+
+300 sks (62 bbls) Conventional system with 94 Ib/sk cement, 0.2% CaCl2, and .3 Ib/sk lost
+circulation control agent
