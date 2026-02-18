@@ -209,4 +209,3 @@ The map will:
 * Used Leaflet/OpenLayers for lightweight mapping
 * Stored cleaned data only (no raw HTML retained)
 
-\
