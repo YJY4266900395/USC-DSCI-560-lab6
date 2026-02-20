@@ -14,8 +14,8 @@ The system consists of two major components:
 
 2. Web Visualization
 
-   * Apache web server
-   * Interactive map using Leaflet / OpenLayers
+   * Apache web server (reverse proxy to Flask)
+   * Interactive map using Leaflet.js
    * Marker-based visualization with popups
 
 
@@ -34,6 +34,7 @@ PDF Files
 
 ## Software
 
+* Linux (Ubuntu recommended)
 * Python 3.9+
 * MySQL Server
 * Apache2
@@ -57,6 +58,7 @@ Required packages:
 * beautifulsoup4
 * mysql-connector-python
 * selenium (if dynamic scraping used)
+* flask
 
 If using Selenium:
 
@@ -67,28 +69,34 @@ If using Selenium:
 
 ## Step 1: Start MySQL
 
-```
+```bash
 sudo service mysql start
 ```
 
 ## Step 2: Create Database
-
+```bash
+sudo mysql
 ```
-CREATE DATABASE oil_wells;
-USE oil_wells;
+
+```sql
+CREATE DATABASE IF NOT EXISTS dsci560_lab6;
+CREATE USER IF NOT EXISTS 'labuser'@'localhost' IDENTIFIED BY 'labpass';
+GRANT ALL PRIVILEGES ON dsci560_lab6.* TO 'labuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
 ```
 
 ## Step 3: Create Tables
 
 Run:
 
-```
-mysql -u root -p oil_wells < schema.sql
+```bash
+mysql -u labuser -plabpass dsci560_lab6 < schema.sql
 ```
 
 Tables include:
 
-* wells
+* well_info
 * stimulation_data
 * production_data
 
@@ -105,8 +113,11 @@ Place all PDF files in:
 
 Run:
 
-```
-python extract_pdf.py
+```bash
+python3 dump_pages_json.py \
+    --pdf_dir drive-001 \
+    --out_dir output \
+    --do_ocr --force_ocr --try_fix_pdf --compact
 ```
 
 This script:
@@ -116,9 +127,29 @@ This script:
 * Extracts stimulation data
 * Inserts data into MySQL
 
+Outputs JSON files with per-page OCR text to `output/texts/`.
+
 ---
 
-## Step 2: Web Scraping
+## Step 2: Parse — Extract structured fields
+
+```bash
+python3 filter_and_parse.py \
+    --texts_dir output/texts \
+    --out_dir output/parsed
+```
+
+Outputs `well_info.jsonl` and `stimulation_data.jsonl` to `output/parsed/`.
+
+## Step 3: Load into MySQL
+
+```bash
+python3 load_to_mysql.py
+```
+
+Reads JSONL files and inserts/updates records in MySQL.
+
+## Step 4: Web Scraping
 
 Run:
 
@@ -136,7 +167,7 @@ This script:
 
 ---
 
-## Step 3: Data Preprocessing
+## Step 5: Data Preprocessing
 
 Run:
 
@@ -151,8 +182,9 @@ This script:
 * Replaces missing values with N/A or 0
 * Converts timestamps if necessary
 
+---
 
-# 6. Web Application Setup
+## Step 6: Web Application Setup
 
 Run:
 
@@ -164,15 +196,22 @@ Then click to open browser:
 
 http://localhost
 
-The map will:
+This script:
 
-* Display all oil wells
-* Show markers at correct coordinates
-* Display popup on click with:
+1. Installs Apache2 and enables proxy modules
+2. Installs Python dependencies (Flask, mysql-connector-python)
+3. Creates MySQL user and database (if not already done)
+4. Configures Apache as a reverse proxy to Flask
+5. Starts Flask backend on 127.0.0.1:5000
+6. Restarts Apache
 
-  * Well information
-  * Stimulation data
-  * Production data
+The map displays:
+
+* Push-pin markers at each well's coordinates (color-coded by data availability)
+* Click any marker to see a popup with:
+  * **Well Information**: API#, NDIC#, well name, operator, county, state, lat/lon, surface hole location, datum, address
+  * **Stimulation Data**: date, formation, top/bottom depth, stages, volume, treatment type, acid%, proppant, max pressure, max rate
+  * **Production Data**: well status, well type, closest city, oil barrels, gas MCF (when available)
 
 
 # 7. Testing
@@ -185,9 +224,10 @@ The map will:
 
 # 8. Design Decisions
 
-* Used OCR because PDFs were scanned images
-* Used MySQL for structured relational storage
-* Used web scraping to enrich missing data
-* Used Leaflet/OpenLayers for lightweight mapping
-* Stored cleaned data only (no raw HTML retained)
+* **OCR**: Used ocrmypdf + pdfplumber because PDFs are scanned images, not text-based
+* **Two-pass extraction**: dump_pages_json.py (OCR) → filter_and_parse.py (parsing) allows re-parsing without re-running OCR
+* **MySQL**: Structured relational storage with foreign keys between well_info and stimulation_data
+* **Apache + Flask**: Apache serves as the public-facing web server, Flask handles API logic behind a reverse proxy
+* **Leaflet.js**: Lightweight, well-documented map library with easy marker/popup support
+* **Dark theme**: Stadia Alidade Smooth Dark basemap with custom-styled popups for readability
 
