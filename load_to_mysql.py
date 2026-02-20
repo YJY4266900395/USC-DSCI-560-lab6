@@ -3,14 +3,14 @@ import os
 from pathlib import Path
 import mysql.connector
 
-# ====== 只需要改这里 ======
+# ====== Update this only ======
 MYSQL_HOST = "localhost"
 MYSQL_USER = "labuser"
 MYSQL_PASS = "labpass"
 MYSQL_DB   = "dsci560_lab6"
 
-WELL_JSONL = Path("/mnt/e/Jupyter Notebook file/560/lab6/output/parsed/well_info.jsonl")
-STIM_JSONL = Path("/mnt/e/Jupyter Notebook file/560/lab6/output/parsed/stimulation_data.jsonl")
+WELL_JSONL = Path("output/parsed/well_info.jsonl")
+STIM_JSONL = Path("output/parsed/stimulation_data.jsonl")
 
 # ===========================
 
@@ -70,7 +70,7 @@ def load_wells(cur):
             api  = norm_api(r.get("api"))
             ndic = norm_str(r.get("ndic_file_no"))
 
-            # 至少要有一个业务键（你统计 missing api AND ndic = 0）
+            # at least one key - count missing api AND ndic = 0
             if not api and not ndic:
                 skipped += 1
                 continue
@@ -94,8 +94,8 @@ def load_wells(cur):
 
             cur.execute(sql, vals)
 
-            # mysql-connector：rowcount 对 upsert 不总可靠，这里用“是否已有记录”不划算
-            # 简化：统计执行次数
+            # mysql-connector: rowcount not always reliable to upsert, don't use if already has record
+            # simplify: count executions
             inserted += 1
 
     return inserted, updated, skipped
