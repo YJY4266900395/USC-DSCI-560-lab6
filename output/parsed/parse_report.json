@@ -1,0 +1,15 @@
+{
+  "run_at": "2026-02-20T11:14:28.453838+00:00",
+  "num_files": 77,
+  "stats": {
+    "wells_total": 77,
+    "latlon_present": 74,
+    "latlon_suspect": 0,
+    "stim_present": 71,
+    "stim_has_fields": 54,
+    "datum_present": 0,
+    "shl_present": 41,
+    "stim_extras_present": 70
+  },
+  "errors": []
+}
