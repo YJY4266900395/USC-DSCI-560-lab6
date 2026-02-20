@@ -20,8 +20,8 @@ CREATE TABLE well_info (
   state VARCHAR(100) NULL,
   shl_location VARCHAR(255) NULL,
 
-  latitude_raw VARCHAR(50) NULL,
-  longitude_raw VARCHAR(50) NULL,
+  latitude_raw TEXT NULL,
+  longitude_raw TEXT NULL,
   latitude DECIMAL(10,6) NULL,
   longitude DECIMAL(10,6) NULL,
   datum VARCHAR(50) NULL,
