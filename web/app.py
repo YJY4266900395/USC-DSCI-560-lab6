@@ -75,8 +75,16 @@ def api_wells():
             s.max_treat_rate,
             s.max_treat_rate_units,
             s.details
+                
+            -- Production data fields:
+            -- , p.well_status
+            -- , p.well_type
+            -- , p.closest_city
+            -- , p.oil_barrels
+            -- , p.gas_mcf
         FROM well_info w
         LEFT JOIN stimulation_data s ON s.well_id = w.well_id
+        -- LEFT JOIN production_data p ON p.well_id = w.well_id
         ORDER BY w.well_id
     """)
     # Use LEFT JOIN so wells without stimulation/production records still appear

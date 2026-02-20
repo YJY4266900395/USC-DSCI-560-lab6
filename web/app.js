@@ -13,8 +13,27 @@ const fmtDate = (v) => {
     try { return new Date(v).toLocaleDateString("en-US"); } catch { return v; }
 };
 
+// Status Classification
+/*
+function statusClass(w) {
+    const s = (w.well_status || "").toLowerCase();
+    if (s.includes("active") && !s.includes("inactive")) return "active";
+    if (s.includes("inactive"))                           return "inactive";
+    if (s.includes("plug") || s.includes("abandon"))      return "plugged";
+    return "unknown";
+}
+
+function statusLabel(w) {
+    if (w.well_status && w.well_status.length > 1) return w.well_status;
+    const labels = { active: "Active", inactive: "Inactive", plugged: "Plugged & Abandoned", unknown: "Unknown" };
+    return labels[statusClass(w)];
+}
+*/
+
 function makeIcon(hasStim) {
     const c = hasStim ? "#34d399" : "#6b7280";
+    // const colours = { active: "#34d399", inactive: "#f97316", plugged: "#ef4444", unknown: "#6b7280" };
+    // const c = colours[statusClass(w)] || colours.unknown;
     return L.divIcon({
         className: "",
         iconSize: [18, 18],
@@ -27,7 +46,7 @@ function makeIcon(hasStim) {
     });
 }
 
-// Popup ───────────────────────────────────────────────────
+// Popup
 
 function buildPopup(w) {
     return `
@@ -122,11 +141,40 @@ function buildPopup(w) {
                 </div>
             </div>
         </div>
+        <!-- ── Production Data (production_data table, web-scraped) ──
+             Uncomment this section when production_data table is populated:
+
+        <div class="popup__section">
+            <div class="popup__section-title">Production Data (Web-Scraped)</div>
+            <div class="popup__grid">
+                <div class="popup__field">
+                    <span class="popup__key">Well Status</span>
+                    <span class="popup__val">${fmt(w.well_status)}</span>
+                </div>
+                <div class="popup__field">
+                    <span class="popup__key">Well Type</span>
+                    <span class="popup__val">${fmt(w.well_type)}</span>
+                </div>
+                <div class="popup__field">
+                    <span class="popup__key">Closest City</span>
+                    <span class="popup__val">${fmt(w.closest_city)}</span>
+                </div>
+                <div class="popup__field">
+                    <span class="popup__key">Oil Produced (bbl)</span>
+                    <span class="popup__val popup__val--mono popup__val--highlight">${fmtNum(w.oil_barrels)}</span>
+                </div>
+                <div class="popup__field">
+                    <span class="popup__key">Gas Produced (MCF)</span>
+                    <span class="popup__val popup__val--mono popup__val--highlight">${fmtNum(w.gas_mcf)}</span>
+                </div>
+            </div>
+        </div>
+        -->
 
     </div>`;
 }
 
-// Map ─────────────────────────────────────────────────────
+// Map
 
 const map = L.map("map", { center: [48.065, -103.65], zoom: 11 });
 
@@ -135,7 +183,8 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
     maxZoom: 19,
 }).addTo(map);
 
-// Load & Render ───────────────────────────────────────────
+
+// Load & Render
 
 fetch("/api/wells")
     .then((res) => {
@@ -151,12 +200,18 @@ fetch("/api/wells")
         const withStim = wells.filter(w => w.type_treatment || w.stim_date).length;
         document.getElementById("stat-oil").textContent = withStim;
 
+        // const activeCount = wells.filter(w => statusClass(w) === "active").length;
+        // document.getElementById("stat-active").textContent = activeCount;
+        // const totalOil = wells.reduce((s, w) => s + (w.oil_barrels || 0), 0);
+        // document.getElementById("stat-oil").textContent = totalOil.toLocaleString("en-US");
+
         const group = L.featureGroup();
 
         wells.forEach((w) => {
             if (w.latitude == null || w.longitude == null) return;
             const hasStim = !!(w.type_treatment || w.lbs_proppant || w.max_treat_pressure_psi || w.stim_date);
             const marker = L.marker([w.latitude, w.longitude], { icon: makeIcon(hasStim) });
+            // When production_data ready, switch to: makeIcon(statusClass(w))
             marker.bindPopup(buildPopup(w), { maxWidth: 420, minWidth: 340 });
             group.addLayer(marker);
         });
