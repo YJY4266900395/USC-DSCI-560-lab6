@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Oil Wells Map – Setup Script
-# Usage:  chmod +x setup.sh  &&  sudo ./setup.sh
+# Usage:  chmod +x ./web/setup.sh  &&  sudo ./web/setup.sh
 
 set -e
 
@@ -54,4 +54,4 @@ systemctl restart apache2
 echo "[5] Done."
 
 echo ""
-echo " =============== READY! http://localhost ==============="
+echo " =============== READY! Click to start: http://localhost ==============="

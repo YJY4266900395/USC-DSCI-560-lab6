@@ -154,33 +154,15 @@ This script:
 
 # 6. Web Application Setup
 
-## Step 1: Start Apache
+Run:
 
+```bash
+chmod +x ./web/setup.sh
+sudo ./web/setup.sh
 ```
-sudo service apache2 start
-```
+Then click to open browser: 
 
-## Step 2: Place Web Files
-
-Copy contents of:
-
-```
-/web/
-```
-
-to:
-
-```
-/var/www/html/
-```
-
-## Step 3: Access Webpage
-
-Open browser:
-
-```
 http://localhost
-```
 
 The map will:
 
