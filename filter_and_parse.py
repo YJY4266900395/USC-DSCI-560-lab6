@@ -114,7 +114,7 @@ RX_API_DIG = re.compile(r"\b(\d{10,14})\b")
 RE_NDIC1 = re.compile(r"\bWell\s*File\s*No\.?\s*[:#]?\s*(\d{3,8})\b", re.I)
 RE_NDIC2 = re.compile(r"\bNDIC\s*File\s*Number\s*[:#]?\s*(\d{3,8})\b", re.I)
 
-# 关键修复：不要从“common ownership / attachments / production 列表页”捡 API 当本井 API
+# Key repair: don't pick API from "common ownership / attachments / production list" pages
 API_BAD_CTX = re.compile(
     r"(CTB\s+with\s+common\s+ownership|for\s+the\s+following\s+wells|"
     r"LIST\s+OF\s+ATTACHMENTS|ATTACHMENTS\b|PRODUCTION\b|DISPOSITION\b)",
@@ -160,13 +160,13 @@ def extract_ndic_from_text(text: str):
 
 def extract_api_from_pages(pages):
     if not pages: return None
-    # 先找包含 API 且不在 bad context 的页
+    # first look for pages containing API but not in bad context
     for p in pages:
         tx = p.get("text") or ""
         if re.search(r"\bAPI\b", tx, re.I) and not API_BAD_CTX.search(tx):
             v = extract_api_from_text(tx)
             if v: return v
-    # 再兜底：仍跳过 bad context
+    # then still look for any page with API, except bad context
     for p in pages:
         tx = p.get("text") or ""
         if API_BAD_CTX.search(tx): continue
@@ -514,14 +514,14 @@ def _extract_treatment_type(joined: str, blk: str):
 
         v = v.strip()
 
-        # 清理 cid（右括号可缺）
+        # clean cid (no right parenthesis ok)
         v = re.sub(r"\(cid:\d+\)?", " ", v, flags=re.I)
 
-        # 去分隔符
+        # clean split symbols
         v = re.sub(r"[|¦]+", " ", v)
         v = re.sub(r"\s{2,}", " ", v).strip()
 
-        # 任何残留 cid 直接丢弃
+        # drop any remaining cid
         if "cid:" in v.lower():
             return None
 
@@ -534,19 +534,19 @@ def _extract_treatment_type(joined: str, blk: str):
         if HEADER_BAD.search(v):
             return None
 
-        # 截断数字列（Sand Frac 1234 9000 75.0）
+        # Cut number col (Sand Frac 1234 9000 75.0)
         v = re.split(r"\s+\d", v, maxsplit=1)[0].strip()
 
         if len(v) < 2:
             return None
 
-        # 纯符号不要
+        # No pure symbols
         if re.fullmatch(r"[%\-\|]+", v):
             return None
 
         return clean_line(v)
 
-    # ---------- 1️⃣ 跨行优先（更稳） ----------
+    # priority same line tail, then next non-empty line
     for src in (text, blk):
         lines = [ln.strip() for ln in (src or "").splitlines()]
 
@@ -558,12 +558,12 @@ def _extract_treatment_type(joined: str, blk: str):
                 ).strip()
                 tail = tail.lstrip(":#|").strip()
 
-                # 先尝试用 tail
+                # try tail first
                 v = cleanup(tail) if tail else None
                 if v:
                     return v
 
-                # 如果 tail 是表头/垃圾（cleanup 失败），再看下一条非空行（比如 Sand Frac）
+                # if cleanup failed since tail is head/trash, try next non-empty line (e.g. Sand Frac)
                 for j in range(1, 4):
                     if i + j < len(lines) and lines[i + j].strip():
                         v = cleanup(lines[i + j].strip())
@@ -571,7 +571,7 @@ def _extract_treatment_type(joined: str, blk: str):
                             return v
                         break
 
-    # ---------- 2️⃣ 同行匹配（必须字母开头） ----------
+    # Same line mach, must start with letters
     m = re.search(
         r"\b(?:Type\s*(?:of\s*)?Treatment|Treatment\s*Type|Type\s*Treatment)\b"
         r"\s*[:#]?\s*([A-Za-z][A-Za-z /,&\-]{0,60})",
@@ -584,7 +584,7 @@ def _extract_treatment_type(joined: str, blk: str):
         if v:
             return v
 
-    # ---------- 3️⃣ 兜底 ----------
+    # backup afterall
     if re.search(r"\bACID,\s*SHOT,\s*FRAC\b", text, re.I):
         return "ACID, SHOT, FRAC"
 
@@ -646,7 +646,7 @@ def parse_stim(fig2_pages):
         details = re.split(r"\b(?:PRODUCTION|DISPOSITION|LIST\s+OF\s+ATTACHMENTS|ACID,\s*SHOT,\s*FRAC)\b",
                            details, maxsplit=1, flags=re.I)[0].strip() or None
 
-    # blk 内补救 volume/stages
+    # in blk save volume/stages
     if blk:
         if vol is None:
             mg = RE_VOL_GAL.search(blk)
@@ -760,7 +760,8 @@ def parse_well(fig1_pages, all_pages, rel_path: str, latlon_scan_pages: int):
         )
         suspect, latlon_page = suspect2, pno
 
-    # 只有在“确实抽到了 lat/lon”时，suspect 才有意义
+
+    # only suspect when lat/lon were actually extracted
     latlon_suspect = bool(suspect) if (lat is not None and lon is not None) else False
 
     return dict(
