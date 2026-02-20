@@ -13,6 +13,7 @@ CREATE TABLE well_info (
 
   well_name VARCHAR(255) NULL,
   operator VARCHAR(255) NULL,
+  address VARCHAR(255) NULL,
   enesco_job VARCHAR(50) NULL,
   job_type VARCHAR(100) NULL,
   county VARCHAR(100) NULL,
