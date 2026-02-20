@@ -19,9 +19,9 @@ app = Flask(
 # MySQL connection config 
 DB_CONFIG = {
     "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "oil_wells",
+    "user": "labuser",
+    "password": "labpass",
+    "database": "dsci560_lab6",
     "port": 3306,
 }
 
@@ -44,39 +44,40 @@ def api_wells():
     conn = get_db()
     cur = conn.cursor(dictionary=True)
 
+    # New schema: well_info + stimulation_data (no production_data table)
     cur.execute("""
         SELECT
-            w.id,
-            w.api_number,
+            w.well_id,
+            w.api,
+            w.ndic_file_no,
             w.well_name,
             w.operator,
-            w.latitude,
-            w.longitude,
-            w.address,
             w.county,
             w.state,
-            w.well_file_no,
-            w.plss_quarter,
-            w.section_no,
-            w.township_code,
-            w.range_code,
-            w.state_code,
-            w.status AS well_status_code,
+            w.shl_location,
+            w.latitude,
+            w.longitude,
+            w.latitude_raw,
+            w.longitude_raw,
+            w.datum,
 
-            s.treatment_type,
-            s.total_proppant,
-            s.fluid_volume,
-            s.max_pressure,
-
-            p.well_status,
-            p.well_type,
-            p.closest_city,
-            p.oil_barrels,
-            p.gas_mcf
-        FROM wells w
-        LEFT JOIN stimulation_data s ON s.well_id = w.id
-        LEFT JOIN production_data  p ON p.well_id = w.id
-        ORDER BY w.id
+            s.stim_date,
+            s.stimulated_formation,
+            s.top_ft,
+            s.bottom_ft,
+            s.stimulation_stages,
+            s.volume,
+            s.volume_units,
+            s.type_treatment,
+            s.acid_pct,
+            s.lbs_proppant,
+            s.max_treat_pressure_psi,
+            s.max_treat_rate,
+            s.max_treat_rate_units,
+            s.details
+        FROM well_info w
+        LEFT JOIN stimulation_data s ON s.well_id = w.well_id
+        ORDER BY w.well_id
     """)
     # Use LEFT JOIN so wells without stimulation/production records still appear
 
