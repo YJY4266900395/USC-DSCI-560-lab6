@@ -1,0 +1,9 @@
+pdfplumber
+ocrmypdf
+pytesseract
+pdf2image
+mysql-connector-python
+flask
+requests
+beautifulsoup4
+selenium
