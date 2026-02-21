@@ -3,10 +3,9 @@ CREATE DATABASE lab6 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE lab6;
 
 -- =========================
--- Table: well_info (Figure 1 order)
+-- Table: well_info
 -- =========================
 CREATE TABLE well_info (
-    -- Figure 1 main fields (left → right, top → bottom)
     operator VARCHAR(255),
     well_name VARCHAR(255),
     api VARCHAR(20) NOT NULL,
@@ -24,8 +23,8 @@ CREATE TABLE well_info (
     state VARCHAR(100),
     address VARCHAR(255),
 
-    lat_raw VARCHAR(100),
-    lon_raw VARCHAR(100),
+    lat_raw TEXT,
+    lon_raw TEXT,
     latlon_page INT,
     latlon_suspect BOOLEAN,
 
@@ -36,10 +35,9 @@ CREATE TABLE well_info (
 );
 
 -- =========================
--- Table: stimulation_data (Figure 2 order)
+-- Table: stimulation_data
 -- =========================
 CREATE TABLE stimulation_data (
-    -- Figure 2 main fields (left → right, top → bottom)
     date_stimulated DATE,
     stimulation_formation VARCHAR(255),
     top_ft INT,
@@ -54,14 +52,11 @@ CREATE TABLE stimulation_data (
     max_treatment_rate_bbl_min DECIMAL(6,2),
     details TEXT,
 
-    -- foreign key
     api VARCHAR(20) NOT NULL,
 
-    -- flags
     stim_present BOOLEAN,
     stim_has_fields BOOLEAN,
 
-    -- auxiliary
     ndic_file_no VARCHAR(20),
     fig2_pages JSON,
     raw_text TEXT,
@@ -69,6 +64,32 @@ CREATE TABLE stimulation_data (
 
     PRIMARY KEY (api),
     CONSTRAINT fk_stim_api
+        FOREIGN KEY (api)
+        REFERENCES well_info(api)
+        ON DELETE CASCADE
+);
+
+-- =========================
+-- Table: production_data (web-scraped from DrillingEdge)
+-- =========================
+CREATE TABLE production_data (
+    api VARCHAR(20) NOT NULL,
+    well_name VARCHAR(255),
+    well_status VARCHAR(100),
+    well_type VARCHAR(100),
+    closest_city VARCHAR(255),
+    field_name VARCHAR(255),
+    operator VARCHAR(255),
+    county_state VARCHAR(255),
+    first_production_date VARCHAR(50),
+    most_recent_production_date VARCHAR(50),
+    oil_barrels DECIMAL(14,2),
+    gas_mcf DECIMAL(14,2),
+    drillingedge_url TEXT,
+    scrape_success BOOLEAN,
+
+    PRIMARY KEY (api),
+    CONSTRAINT fk_prod_api
         FOREIGN KEY (api)
         REFERENCES well_info(api)
         ON DELETE CASCADE
