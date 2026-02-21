@@ -17,14 +17,14 @@ pip3 install --break-system-packages --ignore-installed -q flask mysql-connector
 echo "[1] Done."
 
 # 2. Setup MySQL user & database 
-echo "[2] Setting up MySQL user & database..."
-mysql -u root << 'EOSQL'
-CREATE DATABASE IF NOT EXISTS dsci560_lab6;
-CREATE USER IF NOT EXISTS 'labuser'@'localhost' IDENTIFIED BY 'labpass';
-GRANT ALL PRIVILEGES ON dsci560_lab6.* TO 'labuser'@'localhost';
-FLUSH PRIVILEGES;
-EOSQL
-echo "[2] Done. (database: dsci560_lab6, user: labuser)"
+# echo "[2] Setting up MySQL user & database..."
+# mysql -u root << 'EOSQL'
+# CREATE DATABASE IF NOT EXISTS lab6;
+# CREATE USER IF NOT EXISTS 'labuser'@'localhost' IDENTIFIED BY 'labpass';
+# GRANT ALL PRIVILEGES ON lab6.* TO 'labuser'@'localhost';
+# FLUSH PRIVILEGES;
+# EOSQL
+echo "[2] Should done before. (database: lab6, user: labuser)"
 
 # 3. Write Apache config
 echo "[3] Configuring Apache..."
@@ -40,7 +40,7 @@ a2dissite 000-default > /dev/null 2>&1 || true
 a2ensite oilwells > /dev/null 2>&1
 echo "[3] Done."
 
-# 3. Start Flask
+# 4. Start Flask
 echo "[4] Starting Flask..."
 pkill -f "python3.*app.py" 2>/dev/null || true
 sleep 1
@@ -48,7 +48,7 @@ cd "$DIR"
 nohup python3 app.py > flask.log 2>&1 &
 echo "[4] Flask PID: $! (log: flask.log)"
 
-# ── 4. Restart Apache ────────────────────────────────────
+# 5. Restart Apache 
 echo "[5] Restarting Apache..."
 systemctl restart apache2
 echo "[5] Done."

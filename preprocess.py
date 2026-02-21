@@ -15,7 +15,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Any
 
-# ── Regex patterns ───────────────────────────────────────────────────────────
+#  Regex patterns 
 
 RE_HTML_TAG = re.compile(r"<[^>]+>")
 RE_MULTI_SPACE = re.compile(r"\s{2,}")
@@ -39,7 +39,7 @@ STATE_MAP = {
     "wyoming": "Wyoming",
 }
 
-# ── Cleaning Functions ───────────────────────────────────────────────────────
+#  Cleaning Functions 
 
 def clean_string(s: Any) -> Optional[str]:
     """Clean a string value: strip HTML, OCR junk, normalize whitespace."""
@@ -205,7 +205,7 @@ def to_float(v: Any) -> Optional[float]:
         return None
 
 
-# ── Per-table Preprocessing ──────────────────────────────────────────────────
+#  Per-table Preprocessing 
 
 def preprocess_well(row: dict) -> dict:
     """Clean a well_info record."""
@@ -302,7 +302,7 @@ def preprocess_production(row: dict) -> dict:
     return row
 
 
-# ── File Processing ──────────────────────────────────────────────────────────
+#  File Processing 
 
 def process_jsonl(path: Path, preprocess_fn, label: str) -> int:
     """Read a JSONL file, apply preprocessing, write back. Returns row count."""
@@ -332,7 +332,7 @@ def process_jsonl(path: Path, preprocess_fn, label: str) -> int:
     return len(cleaned)
 
 
-# ── Main ─────────────────────────────────────────────────────────────────────
+#  Main 
 
 def main():
     ap = argparse.ArgumentParser(description="Preprocess JSONL data before MySQL import.")

@@ -1,11 +1,8 @@
 """
-scrape_production.py — Step 3: Web Scraping (DrillingEdge)
-==========================================================
-Strategy (reliable, no fragile clicks):
-  1. Load search results via direct GET URL with API# parameter
-  2. Parse the results HTML to extract the well detail page href
-  3. Navigate to that href directly (driver.get, not click)
-  4. Parse the detail page for target fields
+1. Load search results via direct GET URL with API# parameter
+2. Parse the results HTML to extract the well detail page href
+3. Navigate to that href directly (not click)
+4. Parse the detail page for target fields
 
 Usage:
     python3 scrape_production.py \
@@ -35,7 +32,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 
-# ── Constants ────────────────────────────────────────────────────────────────
+#  Constants 
 
 # From your screenshot: the search form submits as GET with these params
 SEARCH_TPL = (
@@ -61,7 +58,7 @@ SEARCH_TPL = (
 RE_SPACES = re.compile(r"\s+")
 RE_MEMBERS = re.compile(r"Members\s*Only", re.I)
 
-# ── Helpers ──────────────────────────────────────────────────────────────────
+#  Helpers 
 
 def norm(s: str) -> str:
     if not s:
@@ -105,7 +102,7 @@ def safe_name(name) -> str:
     return str(name)
 
 
-# ── Browser ──────────────────────────────────────────────────────────────────
+#  Browser 
 
 def make_driver(headless: bool = False) -> webdriver.Chrome:
     opts = Options()
@@ -126,7 +123,7 @@ def make_driver(headless: bool = False) -> webdriver.Chrome:
     return driver
 
 
-# ── Step 1: Search → get detail page URL ─────────────────────────────────────
+#  Step 1: Search - get detail page URL 
 
 def get_well_url(driver: webdriver.Chrome, api: str, delay: float) -> Optional[str]:
     """
@@ -148,7 +145,7 @@ def get_well_url(driver: webdriver.Chrome, api: str, delay: float) -> Optional[s
 
     time.sleep(1)
 
-    # Parse with BS4 — much more reliable than Selenium element clicking
+    # Parse with BS4 - much more reliable than Selenium element clicking
     soup = BeautifulSoup(driver.page_source, "html.parser")
 
     # Find all <a> inside <table> ... <td>
@@ -179,7 +176,7 @@ def get_well_url(driver: webdriver.Chrome, api: str, delay: float) -> Optional[s
     return None
 
 
-# ── Step 2: Parse detail page ────────────────────────────────────────────────
+#  Step 2: Parse detail page 
 default_data = {
         "api": None,
         "well_name": None,
@@ -200,7 +197,7 @@ def parse_detail(driver: webdriver.Chrome, data: dict = default_data) -> Dict:
 
     soup = BeautifulSoup(driver.page_source, "html.parser")
 
-    # ── KV pairs from the "Well Details" table ──
+    # KV pairs from the "Well Details" table 
     # Rows have paired cells: [key, value, key, value, ...]
     kv: Dict[str, str] = {}
     for table in soup.find_all("table"):
@@ -243,7 +240,7 @@ def parse_detail(driver: webdriver.Chrome, data: dict = default_data) -> Dict:
             data["most_recent_production_date"] = clean_val(v)
             continue
 
-    # ── Production badges from Well Summary ──
+    #  Production badges from Well Summary 
     # "1.1 k  Barrels of Oil Produced in Dec 2025"
     # "303    Barrels of Oil Produced in May 2023"
     page_text = soup.get_text(" ", strip=True)
@@ -256,7 +253,7 @@ def parse_detail(driver: webdriver.Chrome, data: dict = default_data) -> Dict:
     if m:
         data["gas_mcf"] = parse_num(m.group(1))
 
-    # ── Fallback: monthly prod columns in the details table ──
+    #  Fallback: monthly prod columns in the details table 
     for k, v in kv.items():
         kl = k.lower()
         if "oil prod" in kl and data["oil_barrels"] is None:
@@ -276,7 +273,7 @@ def parse_detail(driver: webdriver.Chrome, data: dict = default_data) -> Dict:
     return data
 
 
-# ── JSONL I/O ────────────────────────────────────────────────────────────────
+#  JSONL I/O 
 
 def read_jsonl(path: Path) -> List[dict]:
     rows = []
@@ -294,7 +291,7 @@ def append_jsonl(row: dict, path: Path):
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
-# ── Main ─────────────────────────────────────────────────────────────────────
+#  Main 
 
 def main():
     ap = argparse.ArgumentParser(description="Scrape DrillingEdge using Selenium.")
@@ -368,7 +365,7 @@ def main():
                 }
 
             try:
-                # Step 1: search → extract detail URL from results HTML
+                # Step 1: search - extract detail URL from results HTML
                 detail_url = get_well_url(driver, api, args.delay)
                 if not detail_url:
                     print("FAIL (no link in results)")

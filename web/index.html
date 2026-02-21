@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oil Wells Map - North Dakota</title>
 
-    <!-- Leaflet CSS (map library) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-    <!-- Our CSS -->
     <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
 
-    <!-- Header with summary stats -->
     <header class="header">
         <div class="header__brand">
             <div class="header__icon">&#9881;</div>
@@ -31,38 +25,27 @@
             </div>
             <div class="stat">
                 <span class="stat__value" id="stat-active">--</span>
-                <span class="stat__label">Mapped</span>
-                <!-- Change to "Active" when production_data available -->
+                <span class="stat__label">Active</span>
             </div>
             <div class="stat">
                 <span class="stat__value" id="stat-oil">--</span>
-                <span class="stat__label">With Stim Data</span>
-                <!-- Change to "Barrels (latest)" when production_data available -->
+                <span class="stat__label">Total Oil (bbl)</span>
             </div>
         </div>
     </header>
 
-    <!-- Map fills the rest of the screen -->
     <div id="map"></div>
 
-    <!-- Legend overlay -->
+    <!-- Legend -->
     <div class="legend">
-        <div class="legend__title">Markers</div>
-        <div class="legend__item"><span class="legend__dot legend__dot--active"></span> Has Stimulation Data</div>
-        <div class="legend__item"><span class="legend__dot legend__dot--unknown"></span> No Stimulation Data</div>
-        <!-- Enable when production_data is available:
-        <div class="legend__title" style="margin-top:10px">Well Status</div>
+        <div class="legend__title">Well Status</div>
         <div class="legend__item"><span class="legend__dot legend__dot--active"></span> Active</div>
         <div class="legend__item"><span class="legend__dot legend__dot--inactive"></span> Inactive</div>
         <div class="legend__item"><span class="legend__dot legend__dot--plugged"></span> Plugged &amp; Abandoned</div>
-        <div class="legend__item"><span class="legend__dot legend__dot--unknown"></span> Unknown</div>
-        -->
+        <div class="legend__item"><span class="legend__dot legend__dot--unknown"></span> Unknown / No Data</div>
     </div>
 
-    <!-- Leaflet JS (map library) -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Our JS -->
     <script src="/static/app.js"></script>
 </body>
 </html>

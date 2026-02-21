@@ -53,7 +53,7 @@ def _to_flt(s):
 # ===================== OCR cleanup =====================
 CID_RE  = re.compile(r"\(cid:\d+\)")
 
-# 修复点：不要清掉 \t \n \r（否则 label-based 提取全失效）
+# Don't clear \t \n \r
 CTRL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]")
 
 def ocr_cleanup(t: str) -> str:
@@ -63,7 +63,7 @@ def ocr_cleanup(t: str) -> str:
     t = t.replace("’","'").replace("‘","'").replace("”",'"').replace("“",'"').replace("″", '"').replace("′", "'")
     t = t.replace("__", " ")
     t = re.sub(r"[_]{1,}", " ", t)
-    return re.sub(r"[ \f\v]{2,}", " ", t)  # 不合并换行，只合并空格类
+    return re.sub(r"[ \f\v]{2,}", " ", t)  # only merge space, not line break
 
 # ===================== robust label extraction =====================
 BAD_VALUE_RX = re.compile(
@@ -87,7 +87,7 @@ def fix_stim_ocr(t: str) -> str:
     return t
 
 def lines_clean(text: str):
-    # 保留换行结构，才能按行找 label
+    # keep line break to find label by line
     return [ln.replace("\u00a0", " ").rstrip() for ln in (text or "").splitlines() if ln is not None]
 
 def find_value_after_label(text: str, label: str, *, max_lookahead_lines: int = 3):
@@ -236,21 +236,20 @@ def ndic_from_filename(rel_path: str):
     m = re.search(r"(?:^|/|\\)W(\d{3,8})\.pdf\b", rel_path or "", re.I)
     return m.group(1) if m else None
 
-# ===================== NEW: 全文计数选主 API（整合 auto_select_main_api 思路）=====================
+# ===================== Extract API from whole text =====================
 def extract_all_apis_from_text(text: str):
-    """从任意文本里提取所有 API 候选（10位核心格式 33-053-05954 等），返回 list[str]"""
     if not text: return []
     t = (text or "").replace("\u00a0", " ").replace("API¥", "API#").replace("API¥#", "API#")
     out = []
 
-    # 优先找带横杠的
+    # find with-bar first
     out += [normalize_api(x) for x in RX_API_14D.findall(t)]
     out += [normalize_api(x) for x in RX_API_10D.findall(t)]
 
-    # split 形式
+    # split
     out += [normalize_api("".join(x)) for x in RX_API_SPLIT.findall(t)]
 
-    # 纯数字（10~14位）——只有在附近有 API 关键词时才采信
+    # take pure number when keywords nearby
     if re.search(r"\bAPI\b", t, re.I):
         for dig in RX_API_DIG.findall(t):
             v = normalize_api(dig)
@@ -259,10 +258,6 @@ def extract_all_apis_from_text(text: str):
     return [x for x in out if x]
 
 def select_main_api_from_pages(all_pages):
-    """
-    扫描全文所有页：提取所有 API，按出现次数选最大；
-    次级规则：同频率选最早出现页（page 最小）。
-    """
     if not all_pages: return None
 
     cnt = Counter()
@@ -270,8 +265,6 @@ def select_main_api_from_pages(all_pages):
     for p in all_pages:
         pno = p.get("page", 10**9)
         tx = p.get("text") or ""
-        # 不完全丢弃 bad ctx：因为“主 API”也可能在附件/列表里出现
-        # 但如果是 bad ctx，就降低权重（相当于只加 0.5 次）
         apis = extract_all_apis_from_text(tx)
         if not apis:
             continue
@@ -288,16 +281,11 @@ def select_main_api_from_pages(all_pages):
     best_score = max(cnt.values())
     tied = [a for a, sc in cnt.items() if sc == best_score]
 
-    # tie-break：最早出现页
+    # tie-break: earliest page
     tied.sort(key=lambda a: (first_page.get(a, 10**9), a))
     return tied[0]
 
 def load_auto_api_jsonl(path: Path):
-    """
-    读取 final_wells_auto.jsonl（你 auto_select_main_api.py 输出）
-    期待字段至少包含：relative_path / source_pdf / api
-    返回 dict：key(多种) -> api
-    """
     mp = {}
     if not path or not path.exists():
         return mp
@@ -321,11 +309,6 @@ def load_auto_api_jsonl(path: Path):
     return mp
 
 def load_header_overrides_json(path: Path):
-    """
-    读取 header_api_overrides_toponly.json
-    结构类似：{ "W28425.json": {"api": "...", ...}, ... }
-    返回 dict: key -> api
-    """
     mp = {}
     if not path or not path.exists():
         return mp
@@ -340,19 +323,13 @@ def load_header_overrides_json(path: Path):
             api = normalize_api(v.get("api"))
             if api:
                 mp[str(k)] = api
-                # 顺便把 .pdf key 也兼容一下
+                # enable .pdf key
                 if k.lower().endswith(".json"):
                     mp[k[:-5] + ".pdf"] = api
     return mp
 
 def resolve_api_with_overrides(current_api, rel_path, src_pdf, jf_name, auto_map, header_map, all_pages):
-    """
-    优先级：
-    1) current_api（parse_well 已提取）
-    2) auto_map（final_wells_auto.jsonl）
-    3) header_map（header_api_overrides_toponly.json）
-    4) 全文计数选主 API
-    """
+
     if current_api:
         return current_api
 
@@ -360,7 +337,7 @@ def resolve_api_with_overrides(current_api, rel_path, src_pdf, jf_name, auto_map
     if rel_path: keys.append(str(rel_path))
     if src_pdf: keys.append(str(Path(src_pdf).name))
     if jf_name: keys.append(str(jf_name))
-    # 也试试 json->pdf
+    # try json->pdf
     if jf_name and jf_name.lower().endswith(".json"):
         keys.append(jf_name[:-5] + ".pdf")
 
@@ -529,7 +506,7 @@ def dms(d, m, s, h):
 def _valid_latlon(lat, lon):
     return lat is not None and lon is not None and abs(lat) <= 90 and abs(lon) <= 180
 
-# 增强：ND 数据优先使用 ND bbox（即使没有 api）
+# enforce: use nd bbox first although no api
 ND_BBOX = (45.5, 49.5, -105.5, -96.0)
 USA_BBOX = (24.0, 50.0, -125.0, -66.0)
 
@@ -975,7 +952,6 @@ def parse_well(fig1_pages, all_pages, rel_path: str, latlon_scan_pages: int):
     if (ndic is None) or (ndic == "600") or (len(str(ndic)) < 4):
         ndic = ndic_from_filename(rel_path) or ndic
 
-    # 增强：Operator label 覆盖 ND 表单常见写法
     well_name = pick_label_value(joined_clean, ["Well Name and Number", "Well Name"])
     op = pick_label_value(joined_clean, ["Operator", "NAME OF OPERATOR", "OPERATOR"])
     addr = pick_label_value(joined_clean, ["Address"])
@@ -1051,7 +1027,7 @@ def main():
     ap.add_argument("--fig1_neg_penalty", type=int, default=1)
     ap.add_argument("--latlon_scan_pages", type=int, default=350)
 
-    # NEW：把 auto_select_main_api 的结果喂进来（可选）
+    # optional for api
     ap.add_argument("--auto_api_jsonl", default="", help="final_wells_auto.jsonl path (optional)")
     ap.add_argument("--header_api_overrides_json", default="", help="header_api_overrides_toponly.json path (optional)")
 
@@ -1120,7 +1096,7 @@ def main():
             well = parse_well(fig1_pages, all_pages, rel_path, args.latlon_scan_pages)
             stim = parse_stim(fig2_pages) if fig2_pages else dict(stim_present=False, stim_has_fields=False, raw_text="", raw_text_clean="", fig2_pages=[])
 
-            # ========= NEW：补齐 api =========
+            # ========= fill api =========
             api_before = well.get("api")
             api_after = resolve_api_with_overrides(
                 api_before,
@@ -1137,7 +1113,7 @@ def main():
             if api_after:
                 st["api_present"] += 1
                 if not api_before:
-                    # 统计是从哪里补的（尽量近似判断）
+                    # count fill from where
                     keys = []
                     if rel_path: keys.append(str(rel_path))
                     if src_pdf: keys.append(str(Path(src_pdf).name))
