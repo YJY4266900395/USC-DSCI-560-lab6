@@ -78,7 +78,6 @@ CREATE TABLE production_data (
     well_status VARCHAR(100),
     well_type VARCHAR(100),
     closest_city VARCHAR(255),
-    field_name VARCHAR(255),
     operator VARCHAR(255),
     county_state VARCHAR(255),
     first_production_date VARCHAR(50),

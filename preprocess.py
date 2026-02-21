@@ -22,6 +22,8 @@ RE_MULTI_SPACE = re.compile(r"\s{2,}")
 RE_OCR_JUNK = re.compile(r"[^\x20-\x7E\u00C0-\u024F\u0300-\u036F°'\".,;:\-/()&#+\n]")
 RE_CONTROL_CHARS = re.compile(r"[\x00-\x1f\x7f-\x9f]")
 RE_NUMBER_ONLY = re.compile(r"^[\d,]+\.?\d*$")
+RE_OCR_NO_SHORT = re.compile(r"(?i)\band\s*number\b")
+RE_OCR_ANDNO = re.compile(r"(?i)\bAND\s*NO\.?\:?")
 
 # State normalization
 STATE_MAP = {
@@ -54,6 +56,32 @@ def clean_string(s: Any) -> Optional[str]:
     s = RE_MULTI_SPACE.sub(" ", s).strip()
     # Return None if empty
     return s if s else None
+
+
+def clean_well_name(s: Any) -> Optional[str]:
+    """Clean well name and remove common OCR artifacts like 'and Number' or leading 'AND NO.:'.
+    Returns None if the remaining name is empty or meaningless.
+    """
+    v = clean_string(s)
+    if v is None:
+        return None
+
+    # If the entire string is just 'and Number' (OCR artifact), drop it
+    if re.match(r"(?i)^\s*and\s*number\s*$", v):
+        return None
+
+    # Remove leading 'AND NO.:' variants (may appear before actual name)
+    v = RE_OCR_ANDNO.sub("", v)
+
+    # Remove stray 'and Number' tokens anywhere
+    v = RE_OCR_NO_SHORT.sub("", v)
+
+    # Clean up leftover punctuation and extra spaces
+    v = re.sub(r"^[\s\-:]+", "", v)
+    v = re.sub(r"[\s\-:]+$", "", v)
+    v = RE_MULTI_SPACE.sub(" ", v).strip()
+
+    return v if v else None
 
 
 def clean_ocr_text(s: Any) -> Optional[str]:
@@ -182,7 +210,7 @@ def to_float(v: Any) -> Optional[float]:
 def preprocess_well(row: dict) -> dict:
     """Clean a well_info record."""
     row["operator"] = clean_string(row.get("operator"))
-    row["well_name"] = clean_string(row.get("well_name"))
+    row["well_name"] = clean_well_name(row.get("well_name"))
     row["api"] = clean_string(row.get("api"))
     row["enesco_job"] = clean_string(row.get("enesco_job"))
     row["job_type"] = clean_string(row.get("job_type"))
@@ -244,11 +272,11 @@ def preprocess_stim(row: dict) -> dict:
 def preprocess_production(row: dict) -> dict:
     """Clean a production_data record."""
     row["api"] = clean_string(row.get("api"))
-    row["well_name"] = clean_string(row.get("well_name"))
+    row["well_name"] = clean_well_name(row.get("well_name"))
     row["well_status"] = clean_string(row.get("well_status"))
     row["well_type"] = clean_string(row.get("well_type"))
     row["closest_city"] = clean_string(row.get("closest_city"))
-    row["field_name"] = clean_string(row.get("field_name"))
+    # row["field_name"] = clean_string(row.get("field_name"))
     row["drillingedge_url"] = clean_string(row.get("drillingedge_url"))
 
     # New scraped fields

@@ -216,7 +216,7 @@ def parse_detail(driver: webdriver.Chrome, data: dict = default_data) -> Dict:
     # We'll also extract well_name, operator and county
     for k, v in kv.items():
         kl = k.strip().lower()
-        if (data.get("well_name") is None or data.get("well_name") == "and Number") and kl == "well name":
+        if ((data.get("well_name")) is None or (data.get("well_name") == "and Number")) and kl == "well name":
             data["well_name"] = clean_val(v)
             continue
         if data.get("operator") is None and kl == "operator":
@@ -342,13 +342,18 @@ def main():
             if api in done_apis:
                 skipped += 1
                 continue
+            
+            name = well.get("well_name")
+            sname = safe_name(name)
+            print(f"[{i}/{len(wells)}] {api}  {sname[:45]:<45s}", end="  ", flush=True)
 
-            name = safe_name(well.get("well_name", "null"))
-            print(f"[{i}/{len(wells)}] {api}  {name[:45]:<45s}", end="  ", flush=True)
+            # filter wierd ocr result
+            if str(name).strip().lower() == "and Number":
+                name = None
 
             row = {
                 "api": api,
-                "well_name": well.get("well_name"),
+                "well_name": name,
                 "well_status": None,
                 "well_type": None,
                 "closest_city": None,
