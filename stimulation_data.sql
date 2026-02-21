@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2026-02-21 01:06:57
+-- 生成日期： 2026-02-21 01:24:26
 -- 服务器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -65,7 +65,34 @@ INSERT INTO `stimulation_data` (`id`, `well_id`, `treatment_type`, `total_proppa
 (74, 42, 'Frac / Fracture Treatment', NULL, NULL, NULL),
 (75, 43, 'Frac / Fracture Treatment', NULL, NULL, NULL),
 (76, 44, 'Frac / Fracture Treatment', NULL, NULL, NULL),
-(77, 45, 'Frac / Fracture Treatment', NULL, NULL, NULL);
+(77, 45, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(78, 51, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(79, 64, 'Stimulation', NULL, NULL, NULL),
+(80, 65, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(81, 68, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(82, 69, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(83, 70, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(84, 71, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(85, 72, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(86, 73, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(87, 74, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(88, 75, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(89, 76, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(90, 77, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(91, 78, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(92, 79, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(93, 80, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(94, 81, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(95, 82, 'Stimulation', NULL, NULL, NULL),
+(96, 83, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(97, 84, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(98, 85, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(99, 86, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(100, 87, 'Frac / Fracture Treatment', NULL, NULL, NULL),
+(101, 88, NULL, NULL, NULL, 2500),
+(102, 89, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(103, 92, 'Frac / Fracture Treatment', NULL, NULL, 9000),
+(104, 95, 'Frac / Fracture Treatment', NULL, NULL, NULL);
 
 --
 -- 转储表的索引

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2026-02-21 01:07:05
+-- 生成日期： 2026-02-21 01:24:44
 -- 服务器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -66,7 +66,41 @@ INSERT INTO `production_data` (`id`, `well_id`, `well_status`, `well_type`, `clo
 (22, 36, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 1000, 211),
 (23, 39, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 537, 537),
 (24, 40, 'N/A', 'N/A', 'N/A', 0, 0),
-(25, 41, 'Abandoned', 'N/A', 'N/A', 0, 0);
+(25, 41, 'Abandoned', 'N/A', 'N/A', 0, 0),
+(26, 42, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 1000, 2100),
+(27, 43, 'N/A', 'N/A', 'N/A', 0, 0),
+(28, 44, 'Plugged and Abandoned', 'N/A', 'N/A', 0, 0),
+(29, 45, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 1500, 3400),
+(30, 50, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 296, 193),
+(31, 51, 'Active', 'N/A', 'N/A', 0, 0),
+(32, 64, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 1100, 2500),
+(33, 65, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 714, 1100),
+(34, 68, 'N/A', 'N/A', 'N/A', 0, 0),
+(35, 69, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 275, 2500),
+(36, 70, 'N/A', 'N/A', 'N/A', 0, 0),
+(37, 71, 'N/A', 'N/A', 'N/A', 0, 0),
+(38, 72, 'N/A', 'N/A', 'N/A', 0, 0),
+(39, 73, 'N/A', 'N/A', 'N/A', 0, 0),
+(40, 74, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 1300, 4000),
+(41, 75, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 540, 3600),
+(42, 76, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 396, 1000),
+(43, 77, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 292, 553),
+(44, 78, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 227, 1500),
+(45, 79, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 248, 1300),
+(46, 80, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 321, 1200),
+(47, 81, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 135, 770),
+(48, 82, 'N/A', 'N/A', 'N/A', 0, 0),
+(49, 83, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 185, 451),
+(50, 84, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 285, 1100),
+(51, 85, 'Abandoned', 'N/A', 'N/A', 0, 0),
+(52, 86, 'N/A', 'N/A', 'N/A', 0, 0),
+(53, 87, 'N/A', 'N/A', 'N/A', 0, 0),
+(54, 88, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 318, 2400),
+(55, 89, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 158, 743),
+(56, 90, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 723, 3800),
+(57, 91, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 357, 2900),
+(58, 92, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 206, 1900),
+(59, 95, 'Active Well Type Oil & Gas', 'Oil & Gas', 'Williston', 489, 1800);
 
 --
 -- 转储表的索引
